@@ -1,6 +1,6 @@
 TweetMeMyBus::Application.routes.draw do
   
-  #match '/', :to => 'pages#home'
+  match '/', :to => 'pages#home'
   match '/about',   :to => 'pages#about'
   
   root :to => 'pages#home'
