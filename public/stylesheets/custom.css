@@ -2,8 +2,9 @@
   width: 710px;
 }
 
+/* Gives orange background */
 body {
-  background: #cff;
+  background: #FF9640;
 }
 
 header {
@@ -65,13 +66,14 @@ nav ul li {
   padding: 0.2em 0;
 }
 
+/* font for upper right corner */
 nav ul li a {
   padding: 0 5px;
   font-weight: bold;
 }
 
 nav ul li a:visited {
-  color: #09c;
+  color: #1240AB;
 }
 
 nav ul li a:hover {
@@ -87,7 +89,7 @@ a.signup_button {
   text-align: center;
   width: 190px;
   color: #fff;
-  background: #006400;
+  background: #1240AB;
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
@@ -103,10 +105,11 @@ a.signup_button {
 
 footer {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 710px;
   margin-left: auto;
   margin-right: auto;
+  	
 }
 
 footer nav {
