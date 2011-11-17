@@ -1,0 +1,15 @@
+.............F
+
+Failures:
+
+  1) User password encryption should set the encrypted password
+     Failure/Error: @user.encrypted_password.should_not be_blank
+       expected blank? to return false, got true
+     # ./spec/models/user_spec.rb:111:in `block (3 levels) in <top (required)>'
+
+Finished in 0.2124 seconds
+14 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/models/user_spec.rb:110 # User password encryption should set the encrypted password
