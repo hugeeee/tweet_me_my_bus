@@ -28,9 +28,9 @@ section h1 {
 }
 
 /* Links */
-
+/* Color of links */
 a {
-  color: #09c;
+  color: #069;
   text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ a:hover {
   color: #069;
   text-decoration: underline;
 }
-
+/* I have chosen not to change the color of a visited link */
 a:visited {
   color: #069;
 }
@@ -73,7 +73,7 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: #1240AB;
+  color: #069;
 }
 
 nav ul li a:hover {

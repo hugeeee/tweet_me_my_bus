@@ -14,4 +14,7 @@ class User < ActiveRecord::Base
   
   # :TODO I will have to validate users twitter id
   validates :twitter, :presence => true
+  
+  # this is the password validations
+  
 end
