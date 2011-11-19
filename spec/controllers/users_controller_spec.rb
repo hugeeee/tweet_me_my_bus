@@ -32,7 +32,7 @@ describe UsersController do
       assigns(:user).should == @user
     end
     
-     it "should have the right title" do
+    it "should have the right title" do
       get :show, :id => @user
       response.should have_selector("title", :content => @user.name)
     end
@@ -41,7 +41,7 @@ describe UsersController do
       get :show, :id => @user
       response.should have_selector("h1", :content => @user.name)
     end
-  end
+  end#end of show
   
   describe "POST 'create'" do
     
@@ -66,7 +66,12 @@ describe UsersController do
        it "should have a welcome message" do
         post :create, :user => @attr
         flash[:success].should =~ /welcome to tweet me my bus/i
-      end    
+      end
+      
+      it "should sign the user in" do
+        post :create, :user => @attr
+        controller.should be_signed_in
+      end
     end
     # end of success
     
@@ -92,6 +97,6 @@ describe UsersController do
         post :create, :user => @attr
         response.should render_template('new')
       end
-    end
-  end
+    end#end of failure
+end# end of create
 end
