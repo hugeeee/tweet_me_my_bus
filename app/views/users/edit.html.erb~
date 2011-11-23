@@ -1,7 +1,7 @@
-<h1>Sign up</h1>
+<h1>Edit user</h1>
 
 <%= form_for(@user) do |f| %>
-<%= render 'shared/error_messages', :object => f.object %>
+  <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
@@ -10,11 +10,10 @@
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
-  <div class="field">
-    <%= f.label :twitter, "Twitter ID" %><br />
-    <%= f.text_field :twitter %>
+	<div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
   </div>
-
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password %>
@@ -24,6 +23,7 @@
     <%= f.password_field :password_confirmation %>
   </div>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Update" %>
   </div>
 <% end %>
+
