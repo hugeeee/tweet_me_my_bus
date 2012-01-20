@@ -1,5 +1,7 @@
 TweetMeMyBus::Application.routes.draw do
   
+  get "alerts/new"
+
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
 

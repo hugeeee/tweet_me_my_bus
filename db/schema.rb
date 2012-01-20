@@ -10,7 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111122231057) do
+ActiveRecord::Schema.define(:version => 20120120104021) do
+
+  create_table "alerts", :force => true do |t|
+    t.string   "bus_route"
+    t.string   "stop"
+    t.string   "days_of_notification"
+    t.integer  "first_alert"
+    t.integer  "second_alert"
+    t.integer  "third_alert"
+    t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
