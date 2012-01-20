@@ -1,6 +1,6 @@
-require 'digest'
-
 class Alert < ActiveRecord::Base
+
+	belongs_to :user
 
 	attr_accessible :bus_route, :stop, :first_alert, :second_alert, :third_alert, :active
 

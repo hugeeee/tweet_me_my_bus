@@ -5,7 +5,7 @@
         
         <%= @user.name %>
       </h1>
-			<%= button_to "Create new alert", newalert_path %>
+			<%= link_to "Create new alert", newalert_path, :class => "signup_button round" %>
     </td>
     <td class="sidebar round">
       <strong>Name</strong> <%= @user.name %><br />

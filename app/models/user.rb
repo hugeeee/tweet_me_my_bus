@@ -1,8 +1,12 @@
 require 'digest'
 
 class User < ActiveRecord::Base
+
   attr_accessor :password
   attr_accessible :name, :email, :twitter, :password, :password_confirmation
+
+	# this causes problems
+	has_many :alerts, :dependent => :destroy
 
   # this will check if the username is present and make sure
   # the name length is not too long
@@ -16,7 +20,7 @@ class User < ActiveRecord::Base
   :uniqueness => {:case_sensitive => false}
 
   # :TODO I will have to validate users twitter id
-  validates :twitter, :presence => true
+  validates :twitter, :presence => true, :uniqueness => {:case_sensitive => false}
 
   # consistency of the password entered
   validates :password, :presence     => true,

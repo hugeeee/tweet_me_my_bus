@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 		@title = "Sign up"
 	end
 
+	# this crashes because of the alerts table....where dependent is used
 	def destroy
     User.find(params[:id]).destroy
     flash[:success] = "User destroyed."
@@ -30,12 +31,12 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(params[:user])
 		if @user.save
-		sign_in @user
-		flash[:success] = "Welcome to Tweet Me My Bus!"
-		redirect_to @user
+			sign_in @user
+			flash[:success] = "Welcome to Tweet Me My Bus!"
+			redirect_to @user
 		else
-		@title = "Sign up"
-		render 'new'
+			@title = "Sign up"
+			render 'new'
 		end
 	end
 

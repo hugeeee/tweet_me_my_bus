@@ -7,7 +7,7 @@ class CreateAlerts < ActiveRecord::Migration
       t.integer :first_alert
       t.integer :second_alert
       t.integer :third_alert
-      t.boolean :active, :default => true
+      t.boolean :active
 
       t.timestamps
     end

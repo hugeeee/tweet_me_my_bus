@@ -1,10 +1,12 @@
 require 'digest'
 
 class User < ActiveRecord::Base
-  attr_accessor :password, :test_array
+
+  attr_accessor :password
   attr_accessible :name, :email, :twitter, :password, :password_confirmation
 
-	test_array = ["wexford", "dublin"]
+	# this causes problems
+	has_many :alerts, :dependent => :destroy
 
   # this will check if the username is present and make sure
   # the name length is not too long
