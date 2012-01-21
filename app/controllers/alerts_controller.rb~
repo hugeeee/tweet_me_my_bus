@@ -14,7 +14,8 @@ before_filter :correct_user, :only => [:update, :edit, :destroy]
 		@alert = current_user.alerts.build(params[:alert])
 		if @alert.save
 			# save the alert
-			redirect_to @users_path
+			@user = User.find(params[:user_id])
+			redirect_to @user
 		end
 
 		# maybe do something else

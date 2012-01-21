@@ -14,7 +14,7 @@ namespace :db do
       password  = "password"
       User.create!(:name => name,
                    :email => email,
-									:twitter => "@general",
+									:twitter => "@general#{n+1}",
                    :password => password,
                    :password_confirmation => password)
     end

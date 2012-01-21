@@ -8,7 +8,7 @@
 			<%= button_to "Create new alert", newalert_path %>
 
 			<% unless @user.alerts.empty? %>
-        <table class="alerts" summary="Users alerts">
+        <table class="alerts" summary="User alerts">
           <%= render @alerts %>
         </table>
         <%= will_paginate @alerts %>

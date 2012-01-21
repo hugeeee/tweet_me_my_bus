@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 		@title = "Sign up"
 	end
 
-	# this crashes because of the alerts table
+	# this crashes because of the alerts table....where dependent is used
 	def destroy
     User.find(params[:id]).destroy
     flash[:success] = "User destroyed."

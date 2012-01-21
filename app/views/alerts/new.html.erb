@@ -9,7 +9,10 @@
     <%= f.label :stop %><br />
     <%= f.select(:stop, Alert::STOPS, {:include_blank => "Please select stop"}) %>
   </div>
-	
+	<div class="field">
+    <%= f.label :days_of_notification %><br />
+    <%= f.select(:days_of_notification, Alert::DAYS, {:include_blank => "Please select alert days"}) %>
+  </div>
   <div class="field">
     <%= f.label :first_alert %><br />
     <%= f.text_field :first_alert %>

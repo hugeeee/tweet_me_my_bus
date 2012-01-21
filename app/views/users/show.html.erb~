@@ -7,11 +7,11 @@
       </h1>
 			<%= button_to "Create new alert", newalert_path %>
 
-			<% unless @user.alerts.empty? %>
-        <table class="microposts" summary="Users alerts">
-          <%= render @alerts %>
+			<% unless @user.microposts.empty? %>
+        <table class="microposts" summary="User microposts">
+          <%= render @microposts %>
         </table>
-        <%= will_paginate @alerts %>
+        <%= will_paginate @microposts %>
       <% end %>
 
     </td>
