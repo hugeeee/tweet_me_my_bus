@@ -3,15 +3,16 @@
 <%= form_for(@alert) do |f| %>
   <div class="field">
     <%= f.label :bus_route %><br />
-    <%= f.text_field :bus_route %>
+    <%= f.select(:bus_route, Alert::ROUTES, {:include_blank => "Please select route"}) %>
   </div>
   <div class="field">
     <%= f.label :stop %><br />
-    <%= f.text_field :stop %>
+    <%= f.select(:stop, Alert::STOPS, {:include_blank => "Please select stop"}) %>
   </div>
+	
   <div class="field">
     <%= f.label :first_alert %><br />
-    <%= f.password_field :first_alert %>
+    <%= f.text_field :first_alert %>
   </div>
   <div class="field">
     <%= f.label :second_alert %><br />
