@@ -1,6 +1,7 @@
-<h1>Create alert</h1>
+<h1><%= @title %></h1>
 
 <%= form_for(@alert) do |f| %>
+
   <div class="field">
     <%= f.label :bus_route %><br />
     <%= f.select(:bus_route, Alert::ROUTES, {:include_blank => "Please select route"}) %>
@@ -26,7 +27,14 @@
     <%= f.label :third_alert %><br />
     <%= f.text_field :third_alert %>
   </div>
+
+	<div class="field">
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </div>
+
+
   <div class="actions">
-    <%= f.submit "Create" %>
+    <%= f.submit "Update" %>
   </div>
 <% end %>

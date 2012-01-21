@@ -1,9 +1,9 @@
 class Alert < ActiveRecord::Base
 
 	belongs_to :user
-
+			
 	attr_accessible :bus_route, :stop, :first_alert, :second_alert, :third_alert, :active, 
-										:days_of_notification
+								:days_of_notification, :user_id
 
 	validates :bus_route, :presence => true
 	validates :stop, :presence => true
@@ -14,5 +14,9 @@ class Alert < ActiveRecord::Base
 	validates :third_alert, :presence => true, :numericality => {:only_integer => true}
 
 	validates :user_id, :presence => true
+
+	ROUTES = ["Dublin", "Wexford"]
+	DAYS = ["Weekdays", "Weekends", "Everyday"]
+	STOPS = ["Gorey", "Enniscorthy", "UCD"]
 
 end

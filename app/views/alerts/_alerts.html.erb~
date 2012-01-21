@@ -1,0 +1,12 @@
+<tr>
+  <td class="alert">
+    <span class="route"><%= alert.bus_route %></span>
+    <span class="stop">
+      <%= alert.stop %>
+    </span>
+
+		<span class="days">
+      <%= alert.days_of_notification %>
+    </span>
+  </td>
+</tr>

@@ -1,11 +1,19 @@
 <table class="profile" summary="Profile information">
   <tr>
     <td class="main">
-      <h1>
-        
+      <h1>     
         <%= @user.name %>
       </h1>
+
 			<%= button_to "Create new alert", newalert_path%>
+
+			<% unless @user.alerts.empty? %>
+        <table class="alerts" summary="User alerts">
+          <%= render @alerts %>
+        </table>
+        <%= will_paginate @alerts %>
+      <% end %>
+
     </td>
     <td class="sidebar round">
       <strong>Name</strong> <%= @user.name %><br />

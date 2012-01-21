@@ -5,7 +5,19 @@
         
         <%= @user.name %>
       </h1>
-			<%= button_to "Create new alert", newalert_path, :class => "alert_button"%>
+<<<<<<< HEAD
+			<%= button_to "Create new alert", newalert_path%>
+=======
+			<%= button_to "Create new alert", newalert_path %>
+
+			<% unless @user.alerts.empty? %>
+        <table class="alerts" summary="User alerts">
+          <%= render @alerts %>
+        </table>
+        <%= will_paginate @alerts %>
+      <% end %>
+
+>>>>>>> alerts_form_listing
     </td>
     <td class="sidebar round">
       <strong>Name</strong> <%= @user.name %><br />

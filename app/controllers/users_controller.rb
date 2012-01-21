@@ -6,6 +6,7 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
+		@alerts = @user.alerts.paginate(:page => params[:page])
 		@title = @user.name
 	end
 
@@ -19,7 +20,6 @@ class UsersController < ApplicationController
 		@title = "Sign up"
 	end
 
-	# this crashes because of the alerts table....where dependent is used
 	def destroy
     User.find(params[:id]).destroy
     flash[:success] = "User destroyed."
@@ -41,6 +41,7 @@ class UsersController < ApplicationController
 	end
 
 	def edit
+    @user = User.find(params[:id])
     @title = "Edit user"
   end
 

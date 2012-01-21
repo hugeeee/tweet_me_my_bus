@@ -12,7 +12,8 @@ TweetMeMyBus::Application.routes.draw do
   match '/about',   :to => 'pages#about'
   match '/signup',  :to => 'users#new'
 
-	#match '/newalert', :to => 'alerts#new'
+	match '/newalert', :to => 'alerts#new'
+	match '/updatealert', :to => 'alerts#edit'
   
   root :to => 'pages#home'
   

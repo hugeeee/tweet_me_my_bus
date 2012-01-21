@@ -96,19 +96,6 @@ a.signup_button {
   padding: 20px;
 }
 
-a.alert_button {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-  width: 90px;
-  color: #fff;
-  background: #1240AB;
-  font-size: 100%;
-  font-weight: bold;
-  padding: 20px;
-}
-
 
 /* Round corners */
 
@@ -145,7 +132,7 @@ td.sidebar {
   width: 30%;
   padding: 1em;
   vertical-align: top;
-  background: #ffc;
+  background: #ccc;
 }
 
 .profile img.gravatar {
@@ -243,21 +230,3 @@ div.user_info img {
 div.user_info a {
   text-decoration: none;
 }
-
-div.user_info span.user_name {
-  position: absolute;
-}
-
-div.user_info span.microposts {
-  font-size: 80%;
-}
-
-form.new_micropost {
-  margin-bottom: 2em;
-}
-
-form.new_micropost textarea {
-  height: 4em;
-  margin-bottom: 0;
-}
-

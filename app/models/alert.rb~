@@ -1,9 +1,15 @@
 class Alert < ActiveRecord::Base
 
 	belongs_to :user
+<<<<<<< HEAD
 
 	attr_accessible :bus_route, :stop, :first_alert, :second_alert, :third_alert, :active, 
 										:days_of_notification
+=======
+			
+	attr_accessible :bus_route, :stop, :first_alert, :second_alert, :third_alert, :active, 
+								:days_of_notification, :user_id
+>>>>>>> alerts_form_listing
 
 	validates :bus_route, :presence => true
 	validates :stop, :presence => true
@@ -13,4 +19,13 @@ class Alert < ActiveRecord::Base
 	validates :second_alert, :presence => true, :numericality => {:only_integer => true}
 	validates :third_alert, :presence => true, :numericality => {:only_integer => true}
 
+	validates :user_id, :presence => true
+
+<<<<<<< HEAD
+=======
+	ROUTES = ["Dublin", "Wexford"]
+	DAYS = ["Weekdays", "Weekends", "Everyday"]
+	STOPS = ["Gorey", "Enniscorthy", "UCD"]
+
+>>>>>>> alerts_form_listing
 end

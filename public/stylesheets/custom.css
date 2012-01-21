@@ -132,7 +132,7 @@ td.sidebar {
   width: 30%;
   padding: 1em;
   vertical-align: top;
-  background: #ffc;
+  background: #ccc;
 }
 
 .profile img.gravatar {
@@ -230,21 +230,3 @@ div.user_info img {
 div.user_info a {
   text-decoration: none;
 }
-
-div.user_info span.user_name {
-  position: absolute;
-}
-
-div.user_info span.microposts {
-  font-size: 80%;
-}
-
-form.new_micropost {
-  margin-bottom: 2em;
-}
-
-form.new_micropost textarea {
-  height: 4em;
-  margin-bottom: 0;
-}
-
