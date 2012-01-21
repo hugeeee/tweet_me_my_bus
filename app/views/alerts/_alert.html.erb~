@@ -1,0 +1,10 @@
+<tr>
+<td class="alerts">
+<p>
+	<%= alert.bus_route %> 		
+	<%= alert.stop %>
+	<%= alert.days_of_notification %>
+	<%= link_to "Edit", root_path %>
+</p>
+</td>
+</tr>

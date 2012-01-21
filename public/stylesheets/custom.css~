@@ -2,8 +2,9 @@
   width: 710px;
 }
 
+/* Gives orange background */
 body {
-  background: #cff;
+  background: #FF9640;
 }
 
 header {
@@ -27,9 +28,10 @@ section h1 {
 }
 
 /* Links */
-
+/* Color of links */
 a {
-  color: #09c;
+
+  color: #1240AB;
   text-decoration: none;
 }
 
@@ -37,9 +39,9 @@ a:hover {
   color: #069;
   text-decoration: underline;
 }
-
+/* I have chosen not to change the color of a visited link */
 a:visited {
-  color: #069;
+  color: #1240AB;
 }
 
 /* Navigation */
@@ -65,13 +67,14 @@ nav ul li {
   padding: 0.2em 0;
 }
 
+/* font for upper right corner */
 nav ul li a {
   padding: 0 5px;
   font-weight: bold;
 }
 
 nav ul li a:visited {
-  color: #09c;
+  color: #069;
 }
 
 nav ul li a:hover {
@@ -87,7 +90,7 @@ a.signup_button {
   text-align: center;
   width: 190px;
   color: #fff;
-  background: #006400;
+  background: #1240AB;
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
@@ -103,10 +106,11 @@ a.signup_button {
 
 footer {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 710px;
   margin-left: auto;
   margin-right: auto;
+  	
 }
 
 footer nav {
@@ -127,7 +131,7 @@ td.sidebar {
   width: 30%;
   padding: 1em;
   vertical-align: top;
-  background: #ffc;
+  background: #666;
 }
 
 .profile img.gravatar {
@@ -188,3 +192,40 @@ ul.users {
   list-style: none;
 }
 
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 70px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
