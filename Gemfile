@@ -1,10 +1,10 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.11'
+gem 'rails', '3.0.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-gem 'sqlite3', '1.3.3', :group => :development
+gem 'sqlite3', '1.3.3', #:group => :development
 gem 'will_paginate', '3.0.pre2'
 
 group :development do
