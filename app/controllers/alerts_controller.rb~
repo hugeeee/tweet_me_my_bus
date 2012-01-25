@@ -1,6 +1,6 @@
 class AlertsController < ApplicationController
 
-before_filter :correct_user, :only => [:update, :edit, :destroy]
+#before_filter :correct_user, :only => [:update, :edit, :destroy]
 
   def new
 		@alert = Alert.new
@@ -11,6 +11,10 @@ before_filter :correct_user, :only => [:update, :edit, :destroy]
 	# creates new alert
 	def create
 		@alert = current_user.alerts.build(params[:alert])
+		@alert1 = Alert.where(:bus_route => "Dublin")
+		@user1 = User.find(@alert1.user_id)
+		
+		puts "#{@user1.name}"
 		if @alert.save
 			# save the alert
 			#@user = User.find(params[:user_id])
@@ -46,8 +50,10 @@ before_filter :correct_user, :only => [:update, :edit, :destroy]
 
 	private
 
+# not sure about this
 	def correct_user
-      @user = User.find(params[:user_id])
+			@alert = Alert.find(params[:id])
+      @user = User.find(@alert.user_id)
       redirect_to(root_path) unless current_user?(@user)
   end
 

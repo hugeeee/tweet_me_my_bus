@@ -30,6 +30,9 @@ class UsersController < ApplicationController
 	# and also signs the user in.
 	def create
 		@user = User.new(params[:user])
+	
+		#@twitter_client = TwitterClient.new
+
 		if @user.save
 			sign_in @user
 			flash[:success] = "Welcome to Tweet Me My Bus!"

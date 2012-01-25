@@ -1,0 +1,9 @@
+#!/usr/bin/ruby
+require 'rubygems'
+require 'twitter'
+ 
+oauth = Twitter::OAuth.new('Consumer Key', 'Consumer secret')
+oauth.authorize_from_access('access token', 'access secret')
+ 
+client = Twitter::Base.new(oauth)
+client.update('first tweet, this is a test')

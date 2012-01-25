@@ -1,6 +1,6 @@
 class AlertsController < ApplicationController
 
-before_filter :correct_user, :only => [:update, :edit, :destroy]
+#before_filter :correct_user, :only => [:update, :edit, :destroy]
 
   def new
 		@alert = Alert.new
@@ -11,6 +11,7 @@ before_filter :correct_user, :only => [:update, :edit, :destroy]
 	# creates new alert
 	def create
 		@alert = current_user.alerts.build(params[:alert])
+		
 		if @alert.save
 			# save the alert
 			#@user = User.find(params[:user_id])
@@ -46,6 +47,7 @@ before_filter :correct_user, :only => [:update, :edit, :destroy]
 
 	private
 
+# not sure about this
 	def correct_user
 			@alert = Alert.find(params[:id])
       @user = User.find(@alert.user_id)
