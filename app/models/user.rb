@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
   validates :email, :presence => true, :format => {:with => email_regex},
   :uniqueness => {:case_sensitive => false}
 
-  # :TODO I will have to validate users twitter id
+	# validates the presence of a user twitter
   validates :twitter, :presence => true, :uniqueness => {:case_sensitive => false}#, :twitter_user
 
   # consistency of the password entered
@@ -27,6 +27,8 @@ class User < ActiveRecord::Base
   :confirmation => true,
   :length       => { :within => 6..40 }
 
+	# before the save encrypt the password
+	# the method to encrypt is below
   before_save :encrypt_password
   
   def has_password?(submitted_password)
@@ -46,12 +48,14 @@ class User < ActiveRecord::Base
 
   private
 
+		# pay no attention to this
 		def twitter_user
 			twitter_client = TwitterClient.new
 				errors.add(:twitter, t("Twitter username does not exit")) unless twitter_client.user_search :twitter
 							
 		end
 
+		# encrypts the password
     def encrypt_password
       self.salt = make_salt unless has_password?(password)
       self.encrypted_password = encrypt(password)

@@ -1,25 +1,34 @@
 class UsersController < ApplicationController
 
+	# what authenticated users are allowed to do
 	before_filter :authenticate, :only => [:edit, :update, :index, :destroy]
+	
+	# only the correct_user can use these methods
   before_filter :correct_user, :only => [:edit, :update]
+
+	# only the admin_user can perform these methods
 	before_filter :admin_user,   :only => [:destroy, :index]
 
+	# get the user details and display
 	def show
 		@user = User.find(params[:id])
 		@alerts = @user.alerts.paginate(:page => params[:page])
 		@title = @user.name
 	end
 
+	# shows admin list of all users
 	def index
     @title = "All users"
     @users = User.paginate(:page => params[:page])
   end
 
+	# signup page
 	def new
 		@user = User.new
 		@title = "Sign up"
 	end
 
+	# destroys a user from the db
 	def destroy
     User.find(params[:id]).destroy
     flash[:success] = "User destroyed."
