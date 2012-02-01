@@ -11,10 +11,7 @@ class AlertsController < ApplicationController
 	# creates new alert
 	def create
 		@alert = current_user.alerts.build(params[:alert])
-		@alert1 = Alert.where(:bus_route => "Dublin")
-		@user1 = User.find(@alert1.user_id)
 		
-		puts "#{@user1.name}"
 		if @alert.save
 			# save the alert
 			#@user = User.find(params[:user_id])

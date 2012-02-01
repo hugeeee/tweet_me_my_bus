@@ -1,7 +1,6 @@
 #!/usr/bin/ruby
 require 'rubygems'
 require 'twitter'
-include 'app/user.rb'
  
 Twitter.configure do |config|
 	config.consumer_key = 'CaePG6UQIlMjsWIVlycyw'
@@ -11,5 +10,11 @@ Twitter.configure do |config|
 end
 
 user = User.first
-Twitter.update("This is a tweet with a random mention @#{user.twitter}.")
-#Twitter.direct_message_create(us, "Lets hope the project sails home now")
+
+begin
+	Twitter.direct_message_create(us, "Lets hope the project sails home now")
+rescue Twitter::Error::Unauthorized => 'The user is not following the app'
+	
+end
+#Twitter.update("This is a tweet with a random mention @#{user.twitter}.")
+

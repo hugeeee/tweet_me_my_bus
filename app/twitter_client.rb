@@ -9,10 +9,8 @@ class TwitterClient
  
 		@client = Twitter::Base.new(oauth)
 		#@client.update('first tweet, this is a test')
+		
+		end
 	end
 
-	def user_search user_name
-		@client.user?
-
-	end
 end

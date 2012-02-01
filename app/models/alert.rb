@@ -15,6 +15,10 @@ class Alert < ActiveRecord::Base
 
 	validates :user_id, :presence => true
 
+	def users_to_notify (bus_route, stop, alert_time)
+		# pull down the users that have alerts due
+	end
+
 	ROUTES = ["Dublin", "Wexford"]
 	DAYS = ["Weekdays", "Weekends", "Everyday"]
 	STOPS = ["Gorey", "Enniscorthy", "UCD"]

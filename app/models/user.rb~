@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
   :uniqueness => {:case_sensitive => false}
 
   # :TODO I will have to validate users twitter id
-  validates :twitter, :presence => true, :uniqueness => {:case_sensitive => false}, :twitter_user
+  validates :twitter, :presence => true, :uniqueness => {:case_sensitive => false}#, :twitter_user
 
   # consistency of the password entered
   validates :password, :presence     => true,
@@ -43,6 +43,10 @@ class User < ActiveRecord::Base
     user = find_by_id(id)
     (user && user.salt == cookie_salt) ? user : nil
   end
+
+	def users_to_notify
+		
+	end
 
   private
 

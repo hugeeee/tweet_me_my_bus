@@ -9,6 +9,12 @@ Twitter.configure do |config|
 	config.oauth_token_secret = 'F2zW6f4BnhFDktNN9OH8LXxHY4bfhWnvIOUXp6OAYhk'
 end
 
-user = User.first
-Twitter.update("This is a tweet with a random mention @#{user.twitter}.")
-#Twitter.direct_message_create(us, "Lets hope the project sails home now")
+#user = User.first
+
+begin
+	Twitter.direct_message_create(us, "Lets hope the project sails home now")
+rescue Twitter::Error::Unauthorized => 'The user is not following the app'
+	
+end
+#Twitter.update("This is a tweet with a random mention @#{user.twitter}.")
+
