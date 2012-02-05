@@ -3,7 +3,7 @@ require 'digest'
 class User < ActiveRecord::Base
 
   attr_accessor :password
-  attr_accessible :name, :email, :twitter, :password, :password_confirmation
+  attr_accessible :name, :email, :twitter, :password, :password_confirmation#, :admin
 
 	# this causes problems
 	has_many :alerts, :dependent => :destroy

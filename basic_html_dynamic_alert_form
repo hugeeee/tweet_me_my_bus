@@ -1,0 +1,62 @@
+<h1>Create alert</h1>
+
+
+<form action="/alerts" class="new_alert" id="new_alert" method="post">
+<div style="margin:0;padding:0;display:inline">
+<input name="authenticity_token" type="hidden"
+       value="rB82sI7Qw5J9J1UMILG/VQL411vH5putR+JwlxLScMQ=" />
+</div>
+
+  <div class="field">
+    <label for="alert_bus_route">Select Bus Route</label><br />
+<select id="alert_bus_route" name="alert[bus_route]" onchange="busChange(this);">
+<option value="empty">Select a Bus Route</option>
+<option value="The 00:30 To Wexford">The 00:30 To Wexford</option>
+<option value="The 06:30 To Wexford">The 06:30 To Wexford</option>
+<option value="The 08:30 To Wexford">The 08:30 To Wexford</option>
+<option value="The 10:30 To Wexford">The 10:30 To Wexford</option>
+<option value="The 12:30 To Wexford">The 12:30 To Wexford</option>
+<option value="The 14:00 To Wexford">The 14:30 To Wexford</option>
+<option value="The 16:30 To Wexford">The 16:30 To Wexford</option>
+<option value="The 17:15 To Wexford">The 17:15 To Wexford</option>
+<option value="The 19:30 To Wexford">The 19:30 To Wexford</option>
+<option value="The 22:30 To Wexford">The 22:30 To Wexford</option>
+</select>
+  </div>
+
+  <div class="field">
+    <label for="alert_stop">Select a stop</label><br />
+<select id="alert_stop" name="alert[stop]">
+<option value="0">Select a stop</option>
+</select>
+
+  <div class="field">
+    <label for="alert_days_of_notification">Select days of notification</label><br />
+<select id="alert_days_of_notification" name="alert[days_of_notification]">
+<option value="empty">Select days to alert</option>
+<option value="Everyday">Everyday</option>
+<option value="Weekdays">Weekdays</option>
+<option value="Weekends">Weekends</option>
+
+</select>
+  </div>
+
+<div class="field">
+    <label for="alert_first_alert">First Alert</label><br />
+    <input id="alert_first_alert" name="alert[first_alert]" size="20" type="integer" />
+  </div>
+
+<div class="field">
+    <label for="alert_second_alert">Second Alert</label><br />
+    <input id="alert_second_alert" name="alert[second_alert]" size="20" type="integer" />
+  </div>
+
+<div class="field">
+    <label for="alert_third_alert">Third Alert</label><br />
+    <input id="alert_third_alert" name="alert[third_alert]" size="20" type="integer" />
+  </div>
+
+  <div class="actions">
+    <input id="alert_submit" name="commit" type="submit" value="Create" />
+  </div>
+</form>

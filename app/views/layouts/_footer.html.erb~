@@ -4,7 +4,7 @@
       <li><%= link_to "About", '#' %></li>
       <li><a href="http://wexfordbus.com/">Wexford Bus</a></li>
       <comment might want to add the twitter follow button></comment>
-      <li><a href="https://twitter.com/HugoRobert17" class="twitter-follow-button" data-show-count="false">Follow @HugoRobert17</a>
+      <li><a href="https://twitter.com/BusAlerts" class="twitter-follow-button" data-show-count="false">Follow @BusAlerts</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
     </ul>
   </nav>

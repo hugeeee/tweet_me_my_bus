@@ -1,0 +1,1596 @@
+Bus stop id: 1
+Bus route id: 1
+Bus stop name: Dublin Airport (Coach Park)(0:30)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 0:30
+
+Bus stop id: 2
+Bus route id: 1
+Bus stop name: Arklow - Old Dublin Rd(1:30)
+Position: 2
+Description: Arklow - Old Dublin Rd
+Time scheduled: 1:30
+
+Bus stop id: 3
+Bus route id: 1
+Bus stop name: Gorey(1:50)
+Position: 3
+Description: Gorey
+Time scheduled: 1:50
+
+Bus stop id: 4
+Bus route id: 1
+Bus stop name: Camolin(2:05)
+Position: 4
+Description: Camolin
+Time scheduled: 2:05
+
+Bus stop id: 5
+Bus route id: 1
+Bus stop name: Ferns(2:10)
+Position: 5
+Description: Ferns
+Time scheduled: 2:10
+
+Bus stop id: 6
+Bus route id: 1
+Bus stop name: Enniscorthy(2:20)
+Position: 6
+Description: Enniscorthy
+Time scheduled: 2:20
+
+Bus stop id: 7
+Bus route id: 1
+Bus stop name: Oylgate(2:30)
+Position: 7
+Description: Oylgate
+Time scheduled: 2:30
+
+Bus stop id: 8
+Bus route id: 1
+Bus stop name: Wexford(2:55)
+Position: 8
+Description: Wexford
+Time scheduled: 2:55
+
+Bus stop id: 9
+Bus route id: 2
+Bus stop name: Dublin Airport (Coach Park)(6:30)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 6:30
+
+Bus stop id: 10
+Bus route id: 2
+Bus stop name: Arklow - Old Dublin Rd(7:30)
+Position: 2
+Description: Arklow - Old Dublin Rd
+Time scheduled: 7:30
+
+Bus stop id: 11
+Bus route id: 2
+Bus stop name: Gorey(7:50)
+Position: 3
+Description: Gorey
+Time scheduled: 7:50
+
+Bus stop id: 12
+Bus route id: 2
+Bus stop name: Camolin(8:05)
+Position: 4
+Description: Camolin
+Time scheduled: 8:05
+
+Bus stop id: 13
+Bus route id: 2
+Bus stop name: Ferns(8:10)
+Position: 5
+Description: Ferns
+Time scheduled: 8:10
+
+Bus stop id: 14
+Bus route id: 2
+Bus stop name: Enniscorthy(8:20)
+Position: 6
+Description: Enniscorthy
+Time scheduled: 8:20
+
+Bus stop id: 15
+Bus route id: 2
+Bus stop name: Oylgate(8:30)
+Position: 7
+Description: Oylgate
+Time scheduled: 8:30
+
+Bus stop id: 16
+Bus route id: 2
+Bus stop name: Wexford(8:45)
+Position: 8
+Description: Wexford
+Time scheduled: 8:45
+
+Bus stop id: 17
+Bus route id: 3
+Bus stop name: Dublin Airport (Coach Park)(8:30)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 8:30
+
+Bus stop id: 18
+Bus route id: 3
+Bus stop name: Northwall / O2 Arena(8:40)
+Position: 2
+Description: Northwall / O2 Arena
+Time scheduled: 8:40
+
+Bus stop id: 19
+Bus route id: 3
+Bus stop name: Georges Quay(8:45)
+Position: 3
+Description: Georges Quay
+Time scheduled: 8:45
+
+Bus stop id: 20
+Bus route id: 3
+Bus stop name: Lr Merrion St (Irish American College)(8:50)
+Position: 4
+Description: Lr Merrion St (Irish American College)
+Time scheduled: 8:50
+
+Bus stop id: 21
+Bus route id: 3
+Bus stop name: Montrose Hotel (UCD)(9:00)
+Position: 5
+Description: Montrose Hotel (UCD)
+Time scheduled: 9:00
+
+Bus stop id: 22
+Bus route id: 3
+Bus stop name: Arklow - Old Dublin Rd(9:45)
+Position: 6
+Description: Arklow - Old Dublin Rd
+Time scheduled: 9:45
+
+Bus stop id: 23
+Bus route id: 3
+Bus stop name: Gorey(10:05)
+Position: 7
+Description: Gorey
+Time scheduled: 10:05
+
+Bus stop id: 24
+Bus route id: 3
+Bus stop name: Camolin(10:20)
+Position: 8
+Description: Camolin
+Time scheduled: 10:20
+
+Bus stop id: 25
+Bus route id: 3
+Bus stop name: Ferns(10:25)
+Position: 9
+Description: Ferns
+Time scheduled: 10:25
+
+Bus stop id: 26
+Bus route id: 3
+Bus stop name: Enniscorthy(10:35)
+Position: 10
+Description: Enniscorthy
+Time scheduled: 10:35
+
+Bus stop id: 27
+Bus route id: 3
+Bus stop name: Oylgate(10:45)
+Position: 11
+Description: Oylgate
+Time scheduled: 10:45
+
+Bus stop id: 28
+Bus route id: 3
+Bus stop name: Wexford(11:00)
+Position: 12
+Description: Wexford
+Time scheduled: 11:00
+
+Bus stop id: 29
+Bus route id: 4
+Bus stop name: Dublin Airport (Coach Park)(10:30)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 10:30
+
+Bus stop id: 30
+Bus route id: 4
+Bus stop name: Northwall / O2 Arena(10:40)
+Position: 2
+Description: Northwall / O2 Arena
+Time scheduled: 10:40
+
+Bus stop id: 31
+Bus route id: 4
+Bus stop name: Georges Quay(10:45)
+Position: 3
+Description: Georges Quay
+Time scheduled: 10:45
+
+Bus stop id: 32
+Bus route id: 4
+Bus stop name: Lr Merrion St (Irish American College)(10:50)
+Position: 4
+Description: Lr Merrion St (Irish American College)
+Time scheduled: 10:50
+
+Bus stop id: 33
+Bus route id: 4
+Bus stop name: Montrose Hotel (UCD)(11:00)
+Position: 5
+Description: Montrose Hotel (UCD)
+Time scheduled: 11:00
+
+Bus stop id: 34
+Bus route id: 4
+Bus stop name: Arklow - Old Dublin Rd(11:45)
+Position: 6
+Description: Arklow - Old Dublin Rd
+Time scheduled: 11:45
+
+Bus stop id: 35
+Bus route id: 4
+Bus stop name: Gorey(12:05)
+Position: 7
+Description: Gorey
+Time scheduled: 12:05
+
+Bus stop id: 36
+Bus route id: 4
+Bus stop name: Camolin(12:20)
+Position: 8
+Description: Camolin
+Time scheduled: 12:20
+
+Bus stop id: 37
+Bus route id: 4
+Bus stop name: Ferns(12:25)
+Position: 9
+Description: Ferns
+Time scheduled: 12:25
+
+Bus stop id: 38
+Bus route id: 4
+Bus stop name: Enniscorthy(12:35)
+Position: 10
+Description: Enniscorthy
+Time scheduled: 12:35
+
+Bus stop id: 39
+Bus route id: 4
+Bus stop name: Oylgate(12:45)
+Position: 11
+Description: Oylgate
+Time scheduled: 12:45
+
+Bus stop id: 40
+Bus route id: 4
+Bus stop name: Wexford(13:00)
+Position: 12
+Description: Wexford
+Time scheduled: 13:00
+
+Bus stop id: 41
+Bus route id: 5
+Bus stop name: Dublin Airport (Coach Park)(12:30)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 12:30
+
+Bus stop id: 42
+Bus route id: 5
+Bus stop name: Northwall / O2 Arena(12:40)
+Position: 2
+Description: Northwall / O2 Arena
+Time scheduled: 12:40
+
+Bus stop id: 43
+Bus route id: 5
+Bus stop name: Georges Quay(12:45)
+Position: 3
+Description: Georges Quay
+Time scheduled: 12:45
+
+Bus stop id: 44
+Bus route id: 5
+Bus stop name: Lr Merrion St (Irish American College)(12:50)
+Position: 4
+Description: Lr Merrion St (Irish American College)
+Time scheduled: 12:50
+
+Bus stop id: 45
+Bus route id: 5
+Bus stop name: Montrose Hotel (UCD)(13:00)
+Position: 5
+Description: Montrose Hotel (UCD)
+Time scheduled: 13:00
+
+Bus stop id: 46
+Bus route id: 5
+Bus stop name: Arklow - Old Dublin Rd(13:45)
+Position: 6
+Description: Arklow - Old Dublin Rd
+Time scheduled: 13:45
+
+Bus stop id: 47
+Bus route id: 5
+Bus stop name: Gorey(14:05)
+Position: 7
+Description: Gorey
+Time scheduled: 14:05
+
+Bus stop id: 48
+Bus route id: 5
+Bus stop name: Camolin(14:20)
+Position: 8
+Description: Camolin
+Time scheduled: 14:20
+
+Bus stop id: 49
+Bus route id: 5
+Bus stop name: Ferns(14:25)
+Position: 9
+Description: Ferns
+Time scheduled: 14:25
+
+Bus stop id: 50
+Bus route id: 5
+Bus stop name: Enniscorthy(14:35)
+Position: 10
+Description: Enniscorthy
+Time scheduled: 14:35
+
+Bus stop id: 51
+Bus route id: 5
+Bus stop name: Oylgate(14:45)
+Position: 11
+Description: Oylgate
+Time scheduled: 14:45
+
+Bus stop id: 52
+Bus route id: 5
+Bus stop name: Wexford(15:00)
+Position: 12
+Description: Wexford
+Time scheduled: 15:00
+
+Bus stop id: 53
+Bus route id: 6
+Bus stop name: Dublin Airport (Coach Park)(14:30)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 14:30
+
+Bus stop id: 54
+Bus route id: 6
+Bus stop name: Northwall / O2 Arena(14:40)
+Position: 2
+Description: Northwall / O2 Arena
+Time scheduled: 14:40
+
+Bus stop id: 55
+Bus route id: 6
+Bus stop name: Georges Quay(14:45)
+Position: 3
+Description: Georges Quay
+Time scheduled: 14:45
+
+Bus stop id: 56
+Bus route id: 6
+Bus stop name: Lr Merrion St (Irish American College)(14:50)
+Position: 4
+Description: Lr Merrion St (Irish American College)
+Time scheduled: 14:50
+
+Bus stop id: 57
+Bus route id: 6
+Bus stop name: Montrose Hotel (UCD)(15:00)
+Position: 5
+Description: Montrose Hotel (UCD)
+Time scheduled: 15:00
+
+Bus stop id: 58
+Bus route id: 6
+Bus stop name: Arklow - Old Dublin Rd(15:45)
+Position: 6
+Description: Arklow - Old Dublin Rd
+Time scheduled: 15:45
+
+Bus stop id: 59
+Bus route id: 6
+Bus stop name: Gorey(16:05)
+Position: 7
+Description: Gorey
+Time scheduled: 16:05
+
+Bus stop id: 60
+Bus route id: 6
+Bus stop name: Camolin(16:20)
+Position: 8
+Description: Camolin
+Time scheduled: 16:20
+
+Bus stop id: 61
+Bus route id: 6
+Bus stop name: Ferns(16:25)
+Position: 9
+Description: Ferns
+Time scheduled: 16:25
+
+Bus stop id: 62
+Bus route id: 6
+Bus stop name: Enniscorthy(16:35)
+Position: 10
+Description: Enniscorthy
+Time scheduled: 16:35
+
+Bus stop id: 63
+Bus route id: 6
+Bus stop name: Oylgate(16:45)
+Position: 11
+Description: Oylgate
+Time scheduled: 16:45
+
+Bus stop id: 64
+Bus route id: 6
+Bus stop name: Wexford(17:00)
+Position: 12
+Description: Wexford
+Time scheduled: 17:00
+
+Bus stop id: 65
+Bus route id: 7
+Bus stop name: Dublin Airport (Coach Park)(16:30)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 16:30
+
+Bus stop id: 66
+Bus route id: 7
+Bus stop name: Northwall / O2 Arena(16:45)
+Position: 2
+Description: Northwall / O2 Arena
+Time scheduled: 16:45
+
+Bus stop id: 67
+Bus route id: 7
+Bus stop name: Georges Quay(16:50)
+Position: 3
+Description: Georges Quay
+Time scheduled: 16:50
+
+Bus stop id: 68
+Bus route id: 7
+Bus stop name: Lr Merrion St (Irish American College)(17:00)
+Position: 4
+Description: Lr Merrion St (Irish American College)
+Time scheduled: 17:00
+
+Bus stop id: 69
+Bus route id: 7
+Bus stop name: Montrose Hotel (UCD)(17:10)
+Position: 5
+Description: Montrose Hotel (UCD)
+Time scheduled: 17:10
+
+Bus stop id: 70
+Bus route id: 7
+Bus stop name: Arklow - Old Dublin Rd(17:55)
+Position: 6
+Description: Arklow - Old Dublin Rd
+Time scheduled: 17:55
+
+Bus stop id: 71
+Bus route id: 7
+Bus stop name: Gorey(18:10)
+Position: 7
+Description: Gorey
+Time scheduled: 18:10
+
+Bus stop id: 72
+Bus route id: 7
+Bus stop name: Camolin(18:20)
+Position: 8
+Description: Camolin
+Time scheduled: 18:20
+
+Bus stop id: 73
+Bus route id: 7
+Bus stop name: Ferns(18:25)
+Position: 9
+Description: Ferns
+Time scheduled: 18:25
+
+Bus stop id: 74
+Bus route id: 7
+Bus stop name: Enniscorthy(18:35)
+Position: 10
+Description: Enniscorthy
+Time scheduled: 18:35
+
+Bus stop id: 75
+Bus route id: 7
+Bus stop name: Oylgate(18:45)
+Position: 11
+Description: Oylgate
+Time scheduled: 18:45
+
+Bus stop id: 76
+Bus route id: 7
+Bus stop name: Wexford(19:00)
+Position: 12
+Description: Wexford
+Time scheduled: 19:00
+
+Bus stop id: 77
+Bus route id: 8
+Bus stop name: Dublin Airport (Coach Park)(17:15)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 17:15
+
+Bus stop id: 78
+Bus route id: 8
+Bus stop name: Northwall / O2 Arena(17:45)
+Position: 2
+Description: Northwall / O2 Arena
+Time scheduled: 17:45
+
+Bus stop id: 79
+Bus route id: 8
+Bus stop name: Georges Quay(17:50)
+Position: 3
+Description: Georges Quay
+Time scheduled: 17:50
+
+Bus stop id: 80
+Bus route id: 8
+Bus stop name: Lr Merrion St (Irish American College)(18:00)
+Position: 4
+Description: Lr Merrion St (Irish American College)
+Time scheduled: 18:00
+
+Bus stop id: 81
+Bus route id: 8
+Bus stop name: Montrose Hotel (UCD)(18:10)
+Position: 5
+Description: Montrose Hotel (UCD)
+Time scheduled: 18:10
+
+Bus stop id: 82
+Bus route id: 8
+Bus stop name: Arklow - Old Dublin Rd(18:55)
+Position: 6
+Description: Arklow - Old Dublin Rd
+Time scheduled: 18:55
+
+Bus stop id: 83
+Bus route id: 8
+Bus stop name: Gorey(19:10)
+Position: 7
+Description: Gorey
+Time scheduled: 19:10
+
+Bus stop id: 84
+Bus route id: 8
+Bus stop name: Camolin(19:20)
+Position: 8
+Description: Camolin
+Time scheduled: 19:20
+
+Bus stop id: 85
+Bus route id: 8
+Bus stop name: Ferns(19:25)
+Position: 9
+Description: Ferns
+Time scheduled: 19:25
+
+Bus stop id: 86
+Bus route id: 8
+Bus stop name: Enniscorthy(19:35)
+Position: 10
+Description: Enniscorthy
+Time scheduled: 19:35
+
+Bus stop id: 87
+Bus route id: 8
+Bus stop name: Oylgate(19:45)
+Position: 11
+Description: Oylgate
+Time scheduled: 19:45
+
+Bus stop id: 88
+Bus route id: 8
+Bus stop name: Wexford(20:00)
+Position: 12
+Description: Wexford
+Time scheduled: 20:00
+
+Bus stop id: 89
+Bus route id: 9
+Bus stop name: Dublin Airport (Coach Park)(19:30)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 19:30
+
+Bus stop id: 90
+Bus route id: 9
+Bus stop name: Northwall / O2 Arena(19:40)
+Position: 2
+Description: Northwall / O2 Arena
+Time scheduled: 19:40
+
+Bus stop id: 91
+Bus route id: 9
+Bus stop name: Georges Quay(19:45)
+Position: 3
+Description: Georges Quay
+Time scheduled: 19:45
+
+Bus stop id: 92
+Bus route id: 9
+Bus stop name: Lr Merrion St (Irish American College)(19:50)
+Position: 4
+Description: Lr Merrion St (Irish American College)
+Time scheduled: 19:50
+
+Bus stop id: 93
+Bus route id: 9
+Bus stop name: Montrose Hotel (UCD)(20:00)
+Position: 5
+Description: Montrose Hotel (UCD)
+Time scheduled: 20:00
+
+Bus stop id: 94
+Bus route id: 9
+Bus stop name: Arklow - Old Dublin Rd(20:45)
+Position: 6
+Description: Arklow - Old Dublin Rd
+Time scheduled: 20:45
+
+Bus stop id: 95
+Bus route id: 9
+Bus stop name: Gorey(21:05)
+Position: 7
+Description: Gorey
+Time scheduled: 21:05
+
+Bus stop id: 96
+Bus route id: 9
+Bus stop name: Camolin(21:20)
+Position: 8
+Description: Camolin
+Time scheduled: 21:20
+
+Bus stop id: 97
+Bus route id: 9
+Bus stop name: Ferns(21:25)
+Position: 9
+Description: Ferns
+Time scheduled: 21:25
+
+Bus stop id: 98
+Bus route id: 9
+Bus stop name: Enniscorthy(21:35)
+Position: 10
+Description: Enniscorthy
+Time scheduled: 21:35
+
+Bus stop id: 99
+Bus route id: 9
+Bus stop name: Oylgate(21:45)
+Position: 11
+Description: Oylgate
+Time scheduled: 21:45
+
+Bus stop id: 100
+Bus route id: 9
+Bus stop name: Wexford(22:00)
+Position: 12
+Description: Wexford
+Time scheduled: 22:00
+
+Bus stop id: 101
+Bus route id: 10
+Bus stop name: Dublin Airport (Coach Park)(22:30)
+Position: 1
+Description: Dublin Airport (Coach Park)
+Time scheduled: 22:30
+
+Bus stop id: 102
+Bus route id: 10
+Bus stop name: Northwall / O2 Arena(22:55)
+Position: 2
+Description: Northwall / O2 Arena
+Time scheduled: 22:55
+
+Bus stop id: 103
+Bus route id: 10
+Bus stop name: Georges Quay(22:57)
+Position: 3
+Description: Georges Quay
+Time scheduled: 22:57
+
+Bus stop id: 104
+Bus route id: 10
+Bus stop name: Lr Merrion St (Irish American College)(23:00)
+Position: 4
+Description: Lr Merrion St (Irish American College)
+Time scheduled: 23:00
+
+Bus stop id: 105
+Bus route id: 10
+Bus stop name: Montrose Hotel (UCD)(23:10)
+Position: 5
+Description: Montrose Hotel (UCD)
+Time scheduled: 23:10
+
+Bus stop id: 106
+Bus route id: 10
+Bus stop name: Arklow - Old Dublin Rd(23:55)
+Position: 6
+Description: Arklow - Old Dublin Rd
+Time scheduled: 23:55
+
+Bus stop id: 107
+Bus route id: 10
+Bus stop name: Gorey(0:15)
+Position: 7
+Description: Gorey
+Time scheduled: 0:15
+
+Bus stop id: 108
+Bus route id: 10
+Bus stop name: Camolin(0:30)
+Position: 8
+Description: Camolin
+Time scheduled: 0:30
+
+Bus stop id: 109
+Bus route id: 10
+Bus stop name: Ferns(0:35)
+Position: 9
+Description: Ferns
+Time scheduled: 0:35
+
+Bus stop id: 110
+Bus route id: 10
+Bus stop name: Enniscorthy(0:45)
+Position: 10
+Description: Enniscorthy
+Time scheduled: 0:45
+
+Bus stop id: 111
+Bus route id: 10
+Bus stop name: Oylgate(0:55)
+Position: 11
+Description: Oylgate
+Time scheduled: 0:55
+
+Bus stop id: 112
+Bus route id: 10
+Bus stop name: Wexford(1:10)
+Position: 12
+Description: Wexford
+Time scheduled: 1:10
+
+Bus stop id: 113
+Bus route id: 11
+Bus stop name: Wexford(1:30)
+Position: 1
+Description: Wexford
+Time scheduled: 1:30
+
+Bus stop id: 114
+Bus route id: 11
+Bus stop name: Oylgate(1:40)
+Position: 2
+Description: Oylgate
+Time scheduled: 1:40
+
+Bus stop id: 115
+Bus route id: 11
+Bus stop name: Enniscorthy(1:55)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 1:55
+
+Bus stop id: 116
+Bus route id: 11
+Bus stop name: Ferns(2:00)
+Position: 4
+Description: Ferns
+Time scheduled: 2:00
+
+Bus stop id: 117
+Bus route id: 11
+Bus stop name: Camolin(2:05)
+Position: 5
+Description: Camolin
+Time scheduled: 2:05
+
+Bus stop id: 118
+Bus route id: 11
+Bus stop name: Gorey(2:20)
+Position: 6
+Description: Gorey
+Time scheduled: 2:20
+
+Bus stop id: 119
+Bus route id: 11
+Bus stop name: Arklow - Old Dublin Rd(2:30)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 2:30
+
+Bus stop id: 120
+Bus route id: 11
+Bus stop name: Dublin Airport (Coach Park)(4:00)
+Position: 8
+Description: Dublin Airport (Coach Park)
+Time scheduled: 4:00
+
+Bus stop id: 121
+Bus route id: 12
+Bus stop name: Wexford(5:00)
+Position: 1
+Description: Wexford
+Time scheduled: 5:00
+
+Bus stop id: 122
+Bus route id: 12
+Bus stop name: Oylgate(5:10)
+Position: 2
+Description: Oylgate
+Time scheduled: 5:10
+
+Bus stop id: 123
+Bus route id: 12
+Bus stop name: Enniscorthy(5:20)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 5:20
+
+Bus stop id: 124
+Bus route id: 12
+Bus stop name: Ferns(5:25)
+Position: 4
+Description: Ferns
+Time scheduled: 5:25
+
+Bus stop id: 125
+Bus route id: 12
+Bus stop name: Camolin(5:30)
+Position: 5
+Description: Camolin
+Time scheduled: 5:30
+
+Bus stop id: 126
+Bus route id: 12
+Bus stop name: Gorey(5:45)
+Position: 6
+Description: Gorey
+Time scheduled: 5:45
+
+Bus stop id: 127
+Bus route id: 12
+Bus stop name: Arklow - Old Dublin Rd(6:00)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 6:00
+
+Bus stop id: 128
+Bus route id: 12
+Bus stop name: UCD(7:00)
+Position: 8
+Description: UCD
+Time scheduled: 7:00
+
+Bus stop id: 129
+Bus route id: 12
+Bus stop name: Clare St (National Gallery)(7:10)
+Position: 9
+Description: Clare St (National Gallery)
+Time scheduled: 7:10
+
+Bus stop id: 130
+Bus route id: 12
+Bus stop name: Custom House Quay(7:15)
+Position: 10
+Description: Custom House Quay
+Time scheduled: 7:15
+
+Bus stop id: 131
+Bus route id: 12
+Bus stop name: Northwall / O2 Arena(7:20)
+Position: 11
+Description: Northwall / O2 Arena
+Time scheduled: 7:20
+
+Bus stop id: 132
+Bus route id: 12
+Bus stop name: Dublin Airport (Coach Park)(7:30)
+Position: 12
+Description: Dublin Airport (Coach Park)
+Time scheduled: 7:30
+
+Bus stop id: 133
+Bus route id: 13
+Bus stop name: Wexford(6:15)
+Position: 1
+Description: Wexford
+Time scheduled: 6:15
+
+Bus stop id: 134
+Bus route id: 13
+Bus stop name: Oylgate(6:25)
+Position: 2
+Description: Oylgate
+Time scheduled: 6:25
+
+Bus stop id: 135
+Bus route id: 13
+Bus stop name: Enniscorthy(6:35)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 6:35
+
+Bus stop id: 136
+Bus route id: 13
+Bus stop name: Ferns(6:40)
+Position: 4
+Description: Ferns
+Time scheduled: 6:40
+
+Bus stop id: 137
+Bus route id: 13
+Bus stop name: Camolin(6:45)
+Position: 5
+Description: Camolin
+Time scheduled: 6:45
+
+Bus stop id: 138
+Bus route id: 13
+Bus stop name: Gorey(7:05)
+Position: 6
+Description: Gorey
+Time scheduled: 7:05
+
+Bus stop id: 139
+Bus route id: 13
+Bus stop name: Arklow - Old Dublin Rd(7:15)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 7:15
+
+Bus stop id: 140
+Bus route id: 13
+Bus stop name: UCD(8:25)
+Position: 8
+Description: UCD
+Time scheduled: 8:25
+
+Bus stop id: 141
+Bus route id: 13
+Bus stop name: Clare St (National Gallery)(8:35)
+Position: 9
+Description: Clare St (National Gallery)
+Time scheduled: 8:35
+
+Bus stop id: 142
+Bus route id: 13
+Bus stop name: Custom House Quay(8:40)
+Position: 10
+Description: Custom House Quay
+Time scheduled: 8:40
+
+Bus stop id: 143
+Bus route id: 13
+Bus stop name: Northwall / O2 Arena(8:45)
+Position: 11
+Description: Northwall / O2 Arena
+Time scheduled: 8:45
+
+Bus stop id: 144
+Bus route id: 13
+Bus stop name: Dublin Airport (Coach Park)(9:05)
+Position: 12
+Description: Dublin Airport (Coach Park)
+Time scheduled: 9:05
+
+Bus stop id: 145
+Bus route id: 14
+Bus stop name: Wexford(7:30)
+Position: 1
+Description: Wexford
+Time scheduled: 7:30
+
+Bus stop id: 146
+Bus route id: 14
+Bus stop name: Oylgate(7:40)
+Position: 2
+Description: Oylgate
+Time scheduled: 7:40
+
+Bus stop id: 147
+Bus route id: 14
+Bus stop name: Enniscorthy(7:50)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 7:50
+
+Bus stop id: 148
+Bus route id: 14
+Bus stop name: Ferns(7:55)
+Position: 4
+Description: Ferns
+Time scheduled: 7:55
+
+Bus stop id: 149
+Bus route id: 14
+Bus stop name: Camolin(8:00)
+Position: 5
+Description: Camolin
+Time scheduled: 8:00
+
+Bus stop id: 150
+Bus route id: 14
+Bus stop name: Gorey(8:15)
+Position: 6
+Description: Gorey
+Time scheduled: 8:15
+
+Bus stop id: 151
+Bus route id: 14
+Bus stop name: Arklow - Old Dublin Rd(8:25)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 8:25
+
+Bus stop id: 152
+Bus route id: 14
+Bus stop name: UCD(9:40)
+Position: 8
+Description: UCD
+Time scheduled: 9:40
+
+Bus stop id: 153
+Bus route id: 14
+Bus stop name: Clare St (National Gallery)(9:50)
+Position: 9
+Description: Clare St (National Gallery)
+Time scheduled: 9:50
+
+Bus stop id: 154
+Bus route id: 14
+Bus stop name: Custom House Quay(9:55)
+Position: 10
+Description: Custom House Quay
+Time scheduled: 9:55
+
+Bus stop id: 155
+Bus route id: 14
+Bus stop name: Northwall / O2 Arena(10:00)
+Position: 11
+Description: Northwall / O2 Arena
+Time scheduled: 10:00
+
+Bus stop id: 156
+Bus route id: 14
+Bus stop name: Dublin Airport (Coach Park)(10:15)
+Position: 12
+Description: Dublin Airport (Coach Park)
+Time scheduled: 10:15
+
+Bus stop id: 157
+Bus route id: 15
+Bus stop name: Wexford(9:30)
+Position: 1
+Description: Wexford
+Time scheduled: 9:30
+
+Bus stop id: 158
+Bus route id: 15
+Bus stop name: Oylgate(9:40)
+Position: 2
+Description: Oylgate
+Time scheduled: 9:40
+
+Bus stop id: 159
+Bus route id: 15
+Bus stop name: Enniscorthy(9:55)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 9:55
+
+Bus stop id: 160
+Bus route id: 15
+Bus stop name: Ferns(10:00)
+Position: 4
+Description: Ferns
+Time scheduled: 10:00
+
+Bus stop id: 161
+Bus route id: 15
+Bus stop name: Camolin(10:05)
+Position: 5
+Description: Camolin
+Time scheduled: 10:05
+
+Bus stop id: 162
+Bus route id: 15
+Bus stop name: Gorey(10:20)
+Position: 6
+Description: Gorey
+Time scheduled: 10:20
+
+Bus stop id: 163
+Bus route id: 15
+Bus stop name: Arklow - Old Dublin Rd(10:30)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 10:30
+
+Bus stop id: 164
+Bus route id: 15
+Bus stop name: UCD(11:40)
+Position: 8
+Description: UCD
+Time scheduled: 11:40
+
+Bus stop id: 165
+Bus route id: 15
+Bus stop name: Clare St (National Gallery)(11:50)
+Position: 9
+Description: Clare St (National Gallery)
+Time scheduled: 11:50
+
+Bus stop id: 166
+Bus route id: 15
+Bus stop name: Custom House Quay(11:55)
+Position: 10
+Description: Custom House Quay
+Time scheduled: 11:55
+
+Bus stop id: 167
+Bus route id: 15
+Bus stop name: Northwall / O2 Arena(12:00)
+Position: 11
+Description: Northwall / O2 Arena
+Time scheduled: 12:00
+
+Bus stop id: 168
+Bus route id: 15
+Bus stop name: Dublin Airport (Coach Park)(12:15)
+Position: 12
+Description: Dublin Airport (Coach Park)
+Time scheduled: 12:15
+
+Bus stop id: 169
+Bus route id: 16
+Bus stop name: Wexford(11:30)
+Position: 1
+Description: Wexford
+Time scheduled: 11:30
+
+Bus stop id: 170
+Bus route id: 16
+Bus stop name: Oylgate(11:40)
+Position: 2
+Description: Oylgate
+Time scheduled: 11:40
+
+Bus stop id: 171
+Bus route id: 16
+Bus stop name: Enniscorthy(11:55)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 11:55
+
+Bus stop id: 172
+Bus route id: 16
+Bus stop name: Ferns(12:00)
+Position: 4
+Description: Ferns
+Time scheduled: 12:00
+
+Bus stop id: 173
+Bus route id: 16
+Bus stop name: Camolin(12:05)
+Position: 5
+Description: Camolin
+Time scheduled: 12:05
+
+Bus stop id: 174
+Bus route id: 16
+Bus stop name: Gorey(12:20)
+Position: 6
+Description: Gorey
+Time scheduled: 12:20
+
+Bus stop id: 175
+Bus route id: 16
+Bus stop name: Arklow - Old Dublin Rd(12:30)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 12:30
+
+Bus stop id: 176
+Bus route id: 16
+Bus stop name: UCD(13:40)
+Position: 8
+Description: UCD
+Time scheduled: 13:40
+
+Bus stop id: 177
+Bus route id: 16
+Bus stop name: Clare St (National Gallery)(13:50)
+Position: 9
+Description: Clare St (National Gallery)
+Time scheduled: 13:50
+
+Bus stop id: 178
+Bus route id: 16
+Bus stop name: Custom House Quay(13:55)
+Position: 10
+Description: Custom House Quay
+Time scheduled: 13:55
+
+Bus stop id: 179
+Bus route id: 16
+Bus stop name: Northwall / O2 Arena(14:00)
+Position: 11
+Description: Northwall / O2 Arena
+Time scheduled: 14:00
+
+Bus stop id: 180
+Bus route id: 16
+Bus stop name: Dublin Airport (Coach Park)(14:15)
+Position: 12
+Description: Dublin Airport (Coach Park)
+Time scheduled: 14:15
+
+Bus stop id: 181
+Bus route id: 17
+Bus stop name: Wexford(13:30)
+Position: 1
+Description: Wexford
+Time scheduled: 13:30
+
+Bus stop id: 182
+Bus route id: 17
+Bus stop name: Oylgate(13:40)
+Position: 2
+Description: Oylgate
+Time scheduled: 13:40
+
+Bus stop id: 183
+Bus route id: 17
+Bus stop name: Enniscorthy(13:55)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 13:55
+
+Bus stop id: 184
+Bus route id: 17
+Bus stop name: Ferns(14:00)
+Position: 4
+Description: Ferns
+Time scheduled: 14:00
+
+Bus stop id: 185
+Bus route id: 17
+Bus stop name: Camolin(14:05)
+Position: 5
+Description: Camolin
+Time scheduled: 14:05
+
+Bus stop id: 186
+Bus route id: 17
+Bus stop name: Gorey(14:20)
+Position: 6
+Description: Gorey
+Time scheduled: 14:20
+
+Bus stop id: 187
+Bus route id: 17
+Bus stop name: Arklow - Old Dublin Rd(14:30)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 14:30
+
+Bus stop id: 188
+Bus route id: 17
+Bus stop name: UCD(15:40)
+Position: 8
+Description: UCD
+Time scheduled: 15:40
+
+Bus stop id: 189
+Bus route id: 17
+Bus stop name: Clare St (National Gallery)(15:50)
+Position: 9
+Description: Clare St (National Gallery)
+Time scheduled: 15:50
+
+Bus stop id: 190
+Bus route id: 17
+Bus stop name: Custom House Quay(15:55)
+Position: 10
+Description: Custom House Quay
+Time scheduled: 15:55
+
+Bus stop id: 191
+Bus route id: 17
+Bus stop name: Northwall / O2 Arena(16:00)
+Position: 11
+Description: Northwall / O2 Arena
+Time scheduled: 16:00
+
+Bus stop id: 192
+Bus route id: 17
+Bus stop name: Dublin Airport (Coach Park)(16:15)
+Position: 12
+Description: Dublin Airport (Coach Park)
+Time scheduled: 16:15
+
+Bus stop id: 193
+Bus route id: 18
+Bus stop name: Wexford(15:30)
+Position: 1
+Description: Wexford
+Time scheduled: 15:30
+
+Bus stop id: 194
+Bus route id: 18
+Bus stop name: Oylgate(15:40)
+Position: 2
+Description: Oylgate
+Time scheduled: 15:40
+
+Bus stop id: 195
+Bus route id: 18
+Bus stop name: Enniscorthy(15:55)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 15:55
+
+Bus stop id: 196
+Bus route id: 18
+Bus stop name: Ferns(16:00)
+Position: 4
+Description: Ferns
+Time scheduled: 16:00
+
+Bus stop id: 197
+Bus route id: 18
+Bus stop name: Camolin(16:05)
+Position: 5
+Description: Camolin
+Time scheduled: 16:05
+
+Bus stop id: 198
+Bus route id: 18
+Bus stop name: Gorey(16:20)
+Position: 6
+Description: Gorey
+Time scheduled: 16:20
+
+Bus stop id: 199
+Bus route id: 18
+Bus stop name: Arklow - Old Dublin Rd(16:30)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 16:30
+
+Bus stop id: 200
+Bus route id: 18
+Bus stop name: UCD(17:40)
+Position: 8
+Description: UCD
+Time scheduled: 17:40
+
+Bus stop id: 201
+Bus route id: 18
+Bus stop name: Clare St (National Gallery)(17:55)
+Position: 9
+Description: Clare St (National Gallery)
+Time scheduled: 17:55
+
+Bus stop id: 202
+Bus route id: 18
+Bus stop name: Custom House Quay(18:00)
+Position: 10
+Description: Custom House Quay
+Time scheduled: 18:00
+
+Bus stop id: 203
+Bus route id: 18
+Bus stop name: Northwall / O2 Arena(18:05)
+Position: 11
+Description: Northwall / O2 Arena
+Time scheduled: 18:05
+
+Bus stop id: 204
+Bus route id: 18
+Bus stop name: Dublin Airport (Coach Park)(18:20)
+Position: 12
+Description: Dublin Airport (Coach Park)
+Time scheduled: 18:20
+
+Bus stop id: 205
+Bus route id: 19
+Bus stop name: Wexford(17:30)
+Position: 1
+Description: Wexford
+Time scheduled: 17:30
+
+Bus stop id: 206
+Bus route id: 19
+Bus stop name: Oylgate(17:40)
+Position: 2
+Description: Oylgate
+Time scheduled: 17:40
+
+Bus stop id: 207
+Bus route id: 19
+Bus stop name: Enniscorthy(17:55)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 17:55
+
+Bus stop id: 208
+Bus route id: 19
+Bus stop name: Ferns(18:00)
+Position: 4
+Description: Ferns
+Time scheduled: 18:00
+
+Bus stop id: 209
+Bus route id: 19
+Bus stop name: Camolin(18:05)
+Position: 5
+Description: Camolin
+Time scheduled: 18:05
+
+Bus stop id: 210
+Bus route id: 19
+Bus stop name: Gorey(18:20)
+Position: 6
+Description: Gorey
+Time scheduled: 18:20
+
+Bus stop id: 211
+Bus route id: 19
+Bus stop name: Arklow - Old Dublin Rd(18:30)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 18:30
+
+Bus stop id: 212
+Bus route id: 19
+Bus stop name: UCD(19:20)
+Position: 8
+Description: UCD
+Time scheduled: 19:20
+
+Bus stop id: 213
+Bus route id: 19
+Bus stop name: Clare St (National Gallery)(19:30)
+Position: 9
+Description: Clare St (National Gallery)
+Time scheduled: 19:30
+
+Bus stop id: 214
+Bus route id: 19
+Bus stop name: Custom House Quay(19:35)
+Position: 10
+Description: Custom House Quay
+Time scheduled: 19:35
+
+Bus stop id: 215
+Bus route id: 19
+Bus stop name: Northwall / O2 Arena(19:40)
+Position: 11
+Description: Northwall / O2 Arena
+Time scheduled: 19:40
+
+Bus stop id: 216
+Bus route id: 19
+Bus stop name: Dublin Airport (Coach Park)(20:00)
+Position: 12
+Description: Dublin Airport (Coach Park)
+Time scheduled: 20:00
+
+Bus stop id: 217
+Bus route id: 20
+Bus stop name: Wexford(19:30)
+Position: 1
+Description: Wexford
+Time scheduled: 19:30
+
+Bus stop id: 218
+Bus route id: 20
+Bus stop name: Oylgate(19:40)
+Position: 2
+Description: Oylgate
+Time scheduled: 19:40
+
+Bus stop id: 219
+Bus route id: 20
+Bus stop name: Enniscorthy(19:55)
+Position: 3
+Description: Enniscorthy
+Time scheduled: 19:55
+
+Bus stop id: 220
+Bus route id: 20
+Bus stop name: Ferns(20:00)
+Position: 4
+Description: Ferns
+Time scheduled: 20:00
+
+Bus stop id: 221
+Bus route id: 20
+Bus stop name: Camolin(20:05)
+Position: 5
+Description: Camolin
+Time scheduled: 20:05
+
+Bus stop id: 222
+Bus route id: 20
+Bus stop name: Gorey(20:20)
+Position: 6
+Description: Gorey
+Time scheduled: 20:20
+
+Bus stop id: 223
+Bus route id: 20
+Bus stop name: Arklow - Old Dublin Rd(20:30)
+Position: 7
+Description: Arklow - Old Dublin Rd
+Time scheduled: 20:30
+
+Bus stop id: 224
+Bus route id: 20
+Bus stop name: UCD(21:20)
+Position: 8
+Description: UCD
+Time scheduled: 21:20
+
+Bus stop id: 225
+Bus route id: 20
+Bus stop name: Clare St (National Gallery)(21:30)
+Position: 9
+Description: Clare St (National Gallery)
+Time scheduled: 21:30
+
+Bus stop id: 226
+Bus route id: 20
+Bus stop name: Custom House Quay(21:35)
+Position: 10
+Description: Custom House Quay
+Time scheduled: 21:35
+
+Bus stop id: 227
+Bus route id: 20
+Bus stop name: Northwall / O2 Arena(21:40)
+Position: 11
+Description: Northwall / O2 Arena
+Time scheduled: 21:40
+
+Bus stop id: 228
+Bus route id: 20
+Bus stop name: Dublin Airport (Coach Park)(22:00)
+Position: 12
+Description: Dublin Airport (Coach Park)
+Time scheduled: 22:00
+

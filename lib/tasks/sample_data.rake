@@ -7,10 +7,11 @@ namespace :db do
 													:twitter => "hugorobert17",
                          :password => "foobar",
                          :password_confirmation => "foobar")
-	end
-=begin
-    admin.toggle!(:admin)
+	
 
+  	  admin.toggle!(:admin)
+		end
+=begin	
     1.times do |n|
       name  = Faker::Name.name
       email = "example-#{n+1}@railstutorial.org"
