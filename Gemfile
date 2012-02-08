@@ -6,6 +6,10 @@ gem 'rails', '3.0.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'sqlite3', '1.3.3'#, #:group => :development
 gem 'will_paginate', '3.0.pre2'
+gem 'twitter'
+gem 'savon'
+gem 'whenever', :require => false
+#gem 'thinking-sphinx'
 
 group :development do
   gem 'rspec-rails', '2.6.1'

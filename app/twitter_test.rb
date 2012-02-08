@@ -10,10 +10,10 @@ Twitter.configure do |config|
 end
 
 #user = User.first
-
+exception = 'The user is not following the app'
 begin
-	Twitter.direct_message_create(us, "Lets hope the project sails home now")
-rescue Twitter::Error::Unauthorized => 'The user is not following the app'
+	Twitter.direct_message_create("HugoRobert17", "just checking this block works")
+rescue Twitter::Error::Unauthorized => exception
 	
 end
 #Twitter.update("This is a tweet with a random mention @#{user.twitter}.")

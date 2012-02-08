@@ -5,6 +5,8 @@ class UsersController < ApplicationController
 	
 	# only the correct_user can use these methods
   before_filter :correct_user, :only => [:edit, :update]
+
+	# only the admin_user can perform these methods
 	before_filter :admin_user,   :only => [:destroy, :index]
 
 	# get the user details and display
@@ -39,7 +41,7 @@ class UsersController < ApplicationController
 		@user = User.new(params[:user])
 	
 		#@twitter_client = TwitterClient.new
-
+		
 		if @user.save
 			sign_in @user
 			flash[:success] = "Welcome to Tweet Me My Bus!"

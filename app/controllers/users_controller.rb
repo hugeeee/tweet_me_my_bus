@@ -41,7 +41,8 @@ class UsersController < ApplicationController
 		@user = User.new(params[:user])
 	
 		#@twitter_client = TwitterClient.new
-
+		#twitter = @user.twitter
+		
 		if @user.save
 			sign_in @user
 			flash[:success] = "Welcome to Tweet Me My Bus!"
