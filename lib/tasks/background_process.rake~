@@ -3,7 +3,6 @@
 #require 'rubygems'
 require 'twitter'
 
-namespace alerting do
 	task :send_alert => :environment do
 
 	dm_exception = 'The user is not following the app'
@@ -22,8 +21,6 @@ namespace alerting do
 	rescue Twitter::Error::Unauthorized => dm_exception
 		
 	end
-	
-end
 
 	
 end

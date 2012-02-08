@@ -17,7 +17,7 @@ require 'twitter'
 	end	
 
 	begin
-		Twitter.direct_message_create(user.twitter, "Hello #{user.name}, they are sending. Sending from cron")
+		Twitter.direct_message_create(user.twitter, "Hello #{user.name}. I have been sent from heroku")
 	rescue Twitter::Error::Unauthorized => dm_exception
 		
 	end
