@@ -3,6 +3,15 @@ require 'nori/parser/nokogiri'
 #require 'rubygems'
 require 'twitter'
 
+task :start => :environment do
+	Twitter.configure do |config|
+		config.consumer_key = 'CaePG6UQIlMjsWIVlycyw'
+		config.consumer_secret = '6IU3EKExSgX5x0QCI3IEmCWLB4lhddpoO7Tz7IGZnI'
+		config.oauth_token = '472855669-kgZFqYcxhc67jwNs4lmdLWprat0dDLUNRXPyxpYU'
+		config.oauth_token_secret = 'F2zW6f4BnhFDktNN9OH8LXxHY4bfhWnvIOUXp6OAYhk'
+	end
+end
+
 task :send_alert => :environment do
 	dm_exception = 'The user is not following the app'
 
@@ -57,11 +66,6 @@ task :send_alert => :environment do
 		# TODO: use stop name rather than stop id ######################################## DONE!
 		##########################
 		users = User.alerts_to_be_sent(bus[:scheduled_bus_route_code], Alert::STOPS[:bus_stop_id], @time_of_the_week, @arriving_in)
-
-		##############
-		# Is there a quick way to add the bus and stop to the user. Or to distinguish 
-		# which alert they are being sent
-		##############
 
 		# adds bus and stop that the user needs to be alerted for
 		users.each do |i|

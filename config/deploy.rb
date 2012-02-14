@@ -9,6 +9,16 @@ role :app, "your app-server here"                          # This may be the sam
 role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
 role :db,  "your slave db-server here"
 
+after "deploy:symlink", "deploy:update_crontab"
+
+############################ THIS IS NOT FINISHED HERE YET?
+namespace :deploy do
+  desc "Update the crontab file"
+  task :update_crontab, :roles => :db do
+    run "cd #{release_path} && whenever --update-crontab #{application}"
+  end
+end
+
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
 

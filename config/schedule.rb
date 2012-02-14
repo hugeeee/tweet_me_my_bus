@@ -12,12 +12,13 @@
 #end
 #TODO: below is how development is tested but doesn't seem to work with rails s
 #set :environment, 'development'
-
 every :reboot do
-puts "Called"
+	rake "start"
+end
+
+every 1.minute do
 	rake "send_alert"
 	
-
 end
 
 # Example:
