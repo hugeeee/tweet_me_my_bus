@@ -2,10 +2,14 @@ require 'digest'
 
 class User < ActiveRecord::Base
 
-  attr_accessor :password
-  attr_accessible :name, :email, :twitter, :password, :password_confirmation#, :admin
+  attr_accessor :password, :user_alert_stop, :user_alert_bus
+  attr_accessible :name, :email, :twitter, :password, :password_confirmation, :admin
 
-	# this causes problems
+	# this joins a query from the alert class to find alerts to be sent
+	def self.alerts_to_be_sent(b, s, d, t)
+    joins(:alerts) & Alert.alerter(b, s, d, t)
+  end
+	
 	has_many :alerts, :dependent => :destroy
 
   # this will check if the username is present and make sure

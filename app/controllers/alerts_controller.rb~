@@ -10,7 +10,7 @@ before_filter :correct_user, :only => [:update, :edit, :destroy]
 
   end
 
-	# creates new alert
+	# creates new alert and saves in db
 	def create
 		@alert = current_user.alerts.build(params[:alert])
 		

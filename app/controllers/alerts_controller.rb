@@ -13,6 +13,7 @@ before_filter :correct_user, :only => [:update, :edit, :destroy]
 	# creates new alert and saves in db
 	def create
 		@alert = current_user.alerts.build(params[:alert])
+		@alert.active = true
 		
 		if @alert.save
 			# save the alert
