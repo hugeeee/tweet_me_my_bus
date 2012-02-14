@@ -99,15 +99,13 @@ task :send_alert => :environment do
 	#####		SEND OUT THE ALERTS FROM HERE
 	############
 
-=begin
 	threads = []
 
 	# loop thru the users and send the alerts using twitter api
 	@users_to_notify.each do |user|
 		#threads << Thread.new do
-			puts user.class
 			begin
-				Twitter.direct_message_create(user.twitter, "Your bus will be arriving soon o.O")
+				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} will be arriving at #{user.user_alert_stop} in #{@arriving_in} min(s)")
 			rescue Twitter::Error::Unauthorized => dm_exception
 				# what to do in the rescue of a failed message		
 			end
@@ -115,9 +113,6 @@ task :send_alert => :environment do
 		#end
 	end
 	#threads.each(&:join)
-
-=end
-
 
 end
 
