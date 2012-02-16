@@ -16,7 +16,7 @@
 			<option value="The 17:15 To Wexford">The 17:15 To Wexford</option>
 			<option value="The 19:30 To Wexford">The 19:30 To Wexford</option>
 			<option value="The 22:30 To Wexford">The 22:30 To Wexford</option>
-</select>
+	</select>
   </div>
 
   <div class="field">

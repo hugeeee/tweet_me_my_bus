@@ -13,13 +13,15 @@ task :start => :environment do
 
 	begin
 		Twitter.direct_message_create("hugorobert17", "Crontab has run")
-	rescue Twitter::Error::Unauthorized => dm_exception
+	rescue Twitter::Error::Unauthorized => e
+		puts e
 		# what to do in the rescue of a failed message		
 	end
 end
 
 task :send_alert => :environment do
-	dm_exception = 'The user is not following the app'
+
+	logger.info "send_alert called"
 
 	client = Savon::Client.new do
 		wsdl.document = "http://textmemybus.com:8180/TextMyBusSite/services/TextMyBusService?wsdl"
@@ -106,15 +108,14 @@ task :send_alert => :environment do
 		#threads << Thread.new do
 			begin
 				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} will be arriving at #{user.user_alert_stop} in #{@arriving_in} min(s)")
-			rescue Twitter::Error::Unauthorized => dm_exception
+			rescue Twitter::Error::Unauthorized => e
+				puts e
 				# what to do in the rescue of a failed message		
 			end
 
 		#end
 	end
 	#threads.each(&:join)
-
-
 
 end
 

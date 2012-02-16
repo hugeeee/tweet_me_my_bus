@@ -1,13 +1,18 @@
-set :application, "tweetmemybus"#"set your application name here"
-set :repository,  "set your repository location here" # https://github.com/hugeeee/tweet_me_my_bus
+set :application, "tweetmemybus.com"#"set your application name here"
+set :repository,  "https://github.com/hugeeee/tweet_me_my_bus" # https://github.com/hugeeee/tweet_me_my_bus
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+#default_run_options[:pty] = true
+set :user, "hkinghall"
 
-role :web, "your web-server here"# hkinghall@csserver.ucd.ie             # Your HTTP server, Apache/etc
-role :app, "your app-server here"                          # This may be the same as your `Web` server
-role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
-role :db,  "your slave db-server here"
+role :web, "hkinghall@csserver.ucd.ie"# hkinghall@csserver.ucd.ie            # Your HTTP server, Apache/etc
+role :app, "hkinghall@csserver.ucd.ie"                          # This may be the same as your `Web` server
+role :db,  "hkinghall@csserver.ucd.ie", :primary => true # This is where Rails migrations will run
+#role :db,  "your slave db-server here"
+
+set :deploy_to, "/var/www/apps/#{application}"
+set :use_sudo, false
 
 after "deploy:symlink", "deploy:update_crontab"
 

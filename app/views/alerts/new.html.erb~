@@ -6,6 +6,7 @@
     <label for="alert_bus_route">Select Bus Route</label><br />
 		<select id="alert_bus_route" name="alert[bus_route]" onchange="busChange(this);">
 			<option value="empty">Select a Bus Route</option>
+
 			<option value="The 00:30 To Wexford">The 00:30 To Wexford</option>
 			<option value="The 06:30 To Wexford">The 06:30 To Wexford</option>
 			<option value="The 08:30 To Wexford">The 08:30 To Wexford</option>
