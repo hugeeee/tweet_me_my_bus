@@ -3,7 +3,6 @@ set :repository,  "https://github.com/hugeeee/tweet_me_my_bus" # https://github.
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-set :scm_passphrase, "hotmail17"
 #default_run_options[:pty] = true
 set :user, "hkinghall"
 

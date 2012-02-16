@@ -2,7 +2,6 @@ require 'savon'
 require 'nori/parser/nokogiri'
 #require 'rubygems'
 require 'twitter'
-require 'logger'
 
 task :start => :environment do
 	Twitter.configure do |config|
@@ -21,8 +20,6 @@ task :start => :environment do
 end
 
 task :send_alert => :environment do
-
-	logger.info "send_alert called"
 
 	client = Savon::Client.new do
 		wsdl.document = "http://textmemybus.com:8180/TextMyBusSite/services/TextMyBusService?wsdl"

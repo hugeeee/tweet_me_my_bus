@@ -14,7 +14,7 @@ role :db,  "hkinghall@csserver.ucd.ie", :primary => true # This is where Rails m
 set :deploy_to, "/var/www/apps/#{application}"
 set :use_sudo, false
 
-after "deploy:symlink", "deploy:update_crontab"
+after "deploy:symlink", 'deploy:update_code', "deploy:update_crontab"
 
 ############################ THIS IS NOT FINISHED HERE YET?
 namespace :deploy do
