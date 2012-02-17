@@ -64,7 +64,7 @@ task :send_alert => :environment do
 
 		# round off the difference
 		@arriving_in = dif.ceil
-		puts @arriving_in
+	#	puts @arriving_in
 
 		# query the db for users with alerts for the bus, stop and time
 		
