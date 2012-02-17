@@ -1,14 +1,11 @@
 <table class="profile" summary="Profile information">
   <tr>
     <td class="main">
-      <h1>
-        
+      <h1>     
         <%= @user.name %>
       </h1>
-<<<<<<< HEAD
+
 			<%= button_to "Create new alert", newalert_path%>
-=======
-			<%= button_to "Create new alert", newalert_path %>
 
 			<% unless @user.alerts.empty? %>
         <table class="alerts" summary="User alerts">
@@ -17,11 +14,10 @@
         <%= will_paginate @alerts %>
       <% end %>
 
->>>>>>> alerts_form_listing
     </td>
     <td class="sidebar round">
       <strong>Name</strong> <%= @user.name %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+      <strong>URL</strong> You have <%= @user.alerts.size %>
     </td>
   </tr>
 </table>

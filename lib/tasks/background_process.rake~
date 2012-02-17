@@ -64,7 +64,7 @@ task :send_alert => :environment do
 
 		# round off the difference
 		@arriving_in = dif.ceil
-		puts @arriving_in
+	#	puts @arriving_in
 
 		# query the db for users with alerts for the bus, stop and time
 		
@@ -105,6 +105,7 @@ task :send_alert => :environment do
 	@users_to_notify.each do |user|
 		#threads << Thread.new do
 			begin
+				puts @users_to_notify.size
 				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} will be arriving at #{user.user_alert_stop} in #{@arriving_in} min(s)")
 			rescue Twitter::Error::Unauthorized => e
 				puts e
