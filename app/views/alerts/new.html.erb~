@@ -2,6 +2,7 @@
 
 
 <%= form_for(@alert) do |f| %>
+<%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
     <label for="alert_bus_route">Select Bus Route</label><br />
 		<select id="alert_bus_route" name="alert[bus_route]" onchange="busChange(this);">
