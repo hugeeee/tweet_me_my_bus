@@ -20,7 +20,7 @@ task :start => :environment do
 end
 
 task :tester => :environment do
-	users = User.alerts_to_be_sent("The 14:30 To Wexford", "Dublin Airport (Coach Park)", "Everyday", 10)
+	users = User.first
 
 	Twitter.configure do |config|
 		config.consumer_key = 'CaePG6UQIlMjsWIVlycyw'

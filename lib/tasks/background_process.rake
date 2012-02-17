@@ -30,7 +30,7 @@ task :tester => :environment do
 	end
 	
 	begin
-		Twitter.direct_message_create(users[0].twitter, "this is a test tweet")
+		Twitter.direct_message_create(users[0].twitter, "tweet this with a query for first user")
 	rescue Twitter::Error::Unauthorized => e
 		puts e
 		# what to do in the rescue of a failed message		
