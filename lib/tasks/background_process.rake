@@ -146,7 +146,7 @@ task :send_alert => :environment do
 	@users_to_notify.each do |list|
 		list.each do |user|
 			begin
-				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} will be arriving at #{user.user_alert_stop} #{user.time}. (#{user.minute} alert.)")
+				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} will be arriving at #{user.user_alert_stop} #{user.time}. (#{user.minute} minute alert.)")
 			rescue Twitter::Error::Unauthorized => e
 				puts e
 			end

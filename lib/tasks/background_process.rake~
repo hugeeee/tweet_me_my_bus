@@ -47,6 +47,10 @@ end
 	
 end
 
+##########
+#####	This task creates and endpoint with the web service and consumes the response
+#####	It then queries the db for users with an alert due
+##### It then tweets the users with alerts due
 task :send_alert => :environment do
 
 	client = Savon::Client.new do
