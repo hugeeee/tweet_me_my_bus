@@ -2,7 +2,7 @@ require 'digest'
 
 class User < ActiveRecord::Base
 
-  attr_accessor :password, :user_alert_stop, :user_alert_bus. :minute, :time
+  attr_accessor :password, :user_alert_stop, :user_alert_bus, :minute, :time
   attr_accessible :name, :email, :twitter, :password, :password_confirmation, :admin
 
 	# this joins a query from the alert class to find alerts to be sent
@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
   # regex to validate email addresses
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
-	twitter_regex = /@([a-z0-9_]+)/i
+	twitter_regex = ^([a-zA-Z](_?[a-zA-Z0-9]+)*_?|_([a-zA-Z0-9]+_?)*)$
 
   # validates the email
   validates :email, :presence => true, :format => {:with => email_regex},
