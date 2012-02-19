@@ -13,7 +13,7 @@ end
 exception = 'The user is not following the app'
 begin
 	Twitter.direct_message_create("HugoRobert17", "just checking this block works")
-rescue Twitter::Error::Unauthorized => 'The user is not following the app'
+rescue Twitter::Error::Unauthorized => exception
 	
 end
 #Twitter.update("This is a tweet with a random mention @#{user.twitter}.")

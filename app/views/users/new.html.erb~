@@ -15,9 +15,6 @@
     <%= f.text_field :twitter %>
   </div>
 
-	<div class= "field">
-	<%= select_tag "Stop", options_for_select(["Dublin", "Wexford"])%>
-	</div>
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password %>

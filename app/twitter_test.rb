@@ -12,7 +12,7 @@ end
 #user = User.first
 exception = 'The user is not following the app'
 begin
-	Twitter.direct_message_create("HugoRobert17", "just checking this block works")
+	Twitter.direct_message_create("@HugoRobert17", "does it send with an @ infront?")
 rescue Twitter::Error::Unauthorized => exception
 	
 end
