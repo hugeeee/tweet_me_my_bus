@@ -25,7 +25,7 @@ task :tester => :environment do
 	@time_of_the_week = "Weekends"
 	@arriving_in = 20
 
-	users = User.alerts_to_be_sent(@bus, @stop, @time_of_the_week, @arriving_in)
+	user = User.first
 
 	Twitter.configure do |config|
 		config.consumer_key = 'CaePG6UQIlMjsWIVlycyw'
@@ -34,9 +34,8 @@ task :tester => :environment do
 		config.oauth_token_secret = 'F2zW6f4BnhFDktNN9OH8LXxHY4bfhWnvIOUXp6OAYhk'
 	end
 
-	users.each do |element|
 	begin
-		Twitter.direct_message_create(element.twitter, "Your bus is arriving")
+		Twitter.direct_message_create(user.twitter, "Cron with query")
 	rescue Twitter::Error::Unauthorized => e
 		puts e
 		# what to do in the rescue of a failed message		
