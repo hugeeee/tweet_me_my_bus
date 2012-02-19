@@ -12,7 +12,7 @@ task :start => :environment do
 	end
 
 	begin
-		Twitter.direct_message_create("hugorobert17", "Crontab has run")
+		Twitter.direct_message_create("hugorobert17", "The application has booted")
 	rescue Twitter::Error::Unauthorized => e
 		puts e
 		# what to do in the rescue of a failed message		
@@ -40,9 +40,6 @@ task :tester => :environment do
 		puts e
 		# what to do in the rescue of a failed message		
 	end
-	
-end
-	
 	
 end
 

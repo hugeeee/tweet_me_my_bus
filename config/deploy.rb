@@ -2,6 +2,7 @@ set :application, "tweetmemybus.com"#"set your application name here"
 set :repository,  "https://github.com/hugeeee/tweet_me_my_bus" # https://github.com/hugeeee/tweet_me_my_bus
 
 set :scm, :git
+set :scm_passphrase, "hotmail17"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 #default_run_options[:pty] = true
 set :user, "hkinghall"
@@ -11,7 +12,7 @@ role :app, "hkinghall@csserver.ucd.ie"                          # This may be th
 role :db,  "hkinghall@csserver.ucd.ie", :primary => true # This is where Rails migrations will run
 #role :db,  "your slave db-server here"
 
-set :deploy_to, "/var/www/apps/#{application}"
+set :deploy_to, "~/var/www/apps/#{application}"
 set :use_sudo, false
 
 after "deploy:symlink", 'deploy:update_code', "deploy:update_crontab"
