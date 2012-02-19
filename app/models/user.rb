@@ -2,7 +2,7 @@ require 'digest'
 
 class User < ActiveRecord::Base
 
-  attr_accessor :password, :user_alert_stop, :user_alert_bus
+  attr_accessor :password, :user_alert_stop, :user_alert_bus. :minute, :time
   attr_accessible :name, :email, :twitter, :password, :password_confirmation, :admin
 
 	# this joins a query from the alert class to find alerts to be sent

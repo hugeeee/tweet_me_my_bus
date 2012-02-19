@@ -6,7 +6,7 @@
 	<% if alert.active? %>
 	. You will be alerted <%= alert.days_of_notification %>.
 		<% else%>
-		Alert is not active.
+		. Alert is not active.
 	<% end %>
 	<%= link_to "Edit ", edit_alert_path(current_user) %>|
 	<%= link_to "Delete", alert, :method => :delete, :confirm => "You sure?",

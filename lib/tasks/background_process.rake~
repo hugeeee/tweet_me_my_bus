@@ -20,7 +20,12 @@ task :start => :environment do
 end
 
 task :tester => :environment do
-	users = User.first
+	@bus = "The 12:30 To Wexford"
+	@stop = "Montrose Hotel (UCD)"
+	@time_of_the_week = "Weekends"
+	@arriving_in = 20
+
+	users = User.alerts_to_be_sent(@bus, @stop, @time_of_the_week, @arriving_in)
 
 	Twitter.configure do |config|
 		config.consumer_key = 'CaePG6UQIlMjsWIVlycyw'
@@ -28,13 +33,17 @@ task :tester => :environment do
 		config.oauth_token = '472855669-kgZFqYcxhc67jwNs4lmdLWprat0dDLUNRXPyxpYU'
 		config.oauth_token_secret = 'F2zW6f4BnhFDktNN9OH8LXxHY4bfhWnvIOUXp6OAYhk'
 	end
-	
+
+	users.each do |element|
 	begin
-		Twitter.direct_message_create(users[0].twitter, "this is a test tweet")
+		Twitter.direct_message_create(element.twitter, "Your bus is arriving")
 	rescue Twitter::Error::Unauthorized => e
 		puts e
 		# what to do in the rescue of a failed message		
 	end
+	
+end
+	
 	
 end
 
@@ -71,6 +80,7 @@ task :send_alert => :environment do
 		
 	end
 
+	# get the time of the week.....is it a weekday or weekend
 	@time_of_the_week = day_of_week
 
 	# loop thru the soap response and query the alerts due to be sent
@@ -82,14 +92,15 @@ task :send_alert => :environment do
 		dif = (time_of_arrival - @current_time)/ 60
 
 		# round off the difference
-		@arriving_in = dif.ceil
+		@arriving_in = dif.round
 
 		# get the stop out of the hash				##### Prob could do it in one line instead
 		@stop_id = bus[:bus_stop_id]
 		@stop =  Alert::STOPS[@stop_id.to_i]
+		# remove the Bus from the string returned by the web service response
+		bus[:scheduled_bus_route_code].slice! "Bus "
 
-	puts "#{bus[:scheduled_bus_route_code]} will arrive at #{@stop} in #{@arriving_in}"
-
+		puts "#{bus[:scheduled_bus_route_code]}, #{@stop}, #{@time_of_the_week}, #{@arriving_in}"
 		# query the db for users with alerts for the bus, stop and time
 		users = User.alerts_to_be_sent(bus[:scheduled_bus_route_code], @stop, @time_of_the_week, @arriving_in)
 
@@ -97,15 +108,23 @@ task :send_alert => :environment do
 		users.each do |i|
 			i.user_alert_bus = bus[:scheduled_bus_route_code]
 			i.user_alert_stop = @stop
+			i.minute = @arriving_in
+			i.time = @current_time
 		end
 
-		# add to the users that will be alerted
+		# add to the users that will be alerted gathered from the current query
 		# give user an instance of an alert bus. set it to nil then set the attr with stop id and route
-		#puts users.nil?
 		if !users.empty?
-			@users_to_notify + users
+			@users_to_notify << users
+
 		end
 
+	end
+
+	@users_to_notify.each do |element|
+		element.each do |user|
+			puts "#{user.twitter} || #{user.user_alert_bus} ||"
+		end
 	end
 
 	Twitter.configure do |config|
@@ -119,21 +138,16 @@ task :send_alert => :environment do
 	#####		SEND OUT THE ALERTS FROM HERE
 	############
 
-	threads = []
-
 	# loop thru the users and send the alerts using twitter api
-	@users_to_notify.each do |user|
-		#threads << Thread.new do
+	@users_to_notify.each do |list|
+		list.each do |user|
 			begin
-				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} will be arriving at #{user.user_alert_stop} in #{@arriving_in} min(s)")
+				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} will be arriving at #{user.user_alert_stop} #{user.time}. (#{user.minute} alert.)")
 			rescue Twitter::Error::Unauthorized => e
 				puts e
-				# what to do in the rescue of a failed message		
 			end
-
-		#end
+		end
 	end
-	#threads.each(&:join)
 
 end
 

@@ -18,6 +18,7 @@ before_filter :correct_user, :only => [:update, :edit, :destroy]
 		if @alert.save
 			# save the alert
 			#@user = User.find(params[:user_id])
+			flash[:success] = "Alert created"
 			redirect_to current_user
 		end
 

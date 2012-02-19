@@ -8,7 +8,7 @@
 		<% else%>
 		. Alert is not active.
 	<% end %>
-	<%= link_to "Edit ", edit_alert_path(current_user) %>|
+	<%= link_to "Edit ", edit_alert_path(alert) %>|
 	<%= link_to "Delete", alert, :method => :delete, :confirm => "You sure?",
                                 :title => "Delete #{alert.bus_route}" %>
 </p>
