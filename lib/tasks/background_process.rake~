@@ -20,10 +20,6 @@ task :start => :environment do
 end
 
 task :tester => :environment do
-	@bus = "The 12:30 To Wexford"
-	@stop = "Montrose Hotel (UCD)"
-	@time_of_the_week = "Weekends"
-	@arriving_in = 20
 
 	user = User.first
 
@@ -34,15 +30,14 @@ task :tester => :environment do
 		config.oauth_token_secret = 'F2zW6f4BnhFDktNN9OH8LXxHY4bfhWnvIOUXp6OAYhk'
 	end
 
+	time = Time.now
+
 	begin
-		Twitter.direct_message_create(user.twitter, "Cron with query")
+		Twitter.direct_message_create(user.twitter, "Cron with query #{time}")
 	rescue Twitter::Error::Unauthorized => e
 		puts e
 		# what to do in the rescue of a failed message		
 	end
-	
-end
-	
 	
 end
 

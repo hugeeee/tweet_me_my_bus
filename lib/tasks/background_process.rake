@@ -20,10 +20,6 @@ task :start => :environment do
 end
 
 task :tester => :environment do
-	@bus = "The 12:30 To Wexford"
-	@stop = "Montrose Hotel (UCD)"
-	@time_of_the_week = "Weekends"
-	@arriving_in = 20
 
 	user = User.first
 
@@ -34,8 +30,10 @@ task :tester => :environment do
 		config.oauth_token_secret = 'F2zW6f4BnhFDktNN9OH8LXxHY4bfhWnvIOUXp6OAYhk'
 	end
 
+	time = Time.now
+
 	begin
-		Twitter.direct_message_create(user.twitter, "Cron with query")
+		Twitter.direct_message_create(user.twitter, "Cron with query #{time}")
 	rescue Twitter::Error::Unauthorized => e
 		puts e
 		# what to do in the rescue of a failed message		
@@ -103,7 +101,7 @@ task :send_alert => :environment do
 		puts "#{bus[:scheduled_bus_route_code]}, #{@stop}, #{@time_of_the_week}, #{@arriving_in}"
 		# query the db for users with alerts for the bus, stop and time
 		users = User.alerts_to_be_sent(bus[:scheduled_bus_route_code], @stop, @time_of_the_week, @arriving_in)
-
+		
 		# adds bus and stop that the user needs to be alerted for
 		users.each do |i|
 			i.user_alert_bus = bus[:scheduled_bus_route_code]

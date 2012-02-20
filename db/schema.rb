@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20120120155218) do
     t.integer  "first_alert"
     t.integer  "second_alert"
     t.integer  "third_alert"
-    t.boolean  "active"
+    t.boolean  "active",               :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(:version => 20120120155218) do
     t.datetime "updated_at"
     t.string   "encrypted_password"
     t.string   "salt"
-    t.boolean  "admin"
+    t.boolean  "admin",              :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

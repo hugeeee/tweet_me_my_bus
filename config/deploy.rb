@@ -1,3 +1,5 @@
+require "whenever/capistrano"
+
 set :application, "tweetmemybus.com"#"set your application name here"
 set :repository,  "https://github.com/hugeeee/tweet_me_my_bus" # https://github.com/hugeeee/tweet_me_my_bus
 
