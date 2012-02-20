@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
   # regex to validate email addresses
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
-	twitter_regex = /@([a-z0-9_]+)/i
+	twitter_regex = /([a-z0-9_]+)/i
 
   # validates the email
   validates :email, :presence => true, :format => {:with => email_regex},

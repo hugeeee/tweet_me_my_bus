@@ -13,7 +13,7 @@
 			<option value="The 08:30 To Wexford">The 08:30 To Wexford</option>
 			<option value="The 10:30 To Wexford">The 10:30 To Wexford</option>
 			<option value="The 12:30 To Wexford">The 12:30 To Wexford</option>
-			<option value="The 14:00 To Wexford">The 14:30 To Wexford</option>
+			<option value="The 14:30 To Wexford">The 14:30 To Wexford</option>
 			<option value="The 16:30 To Wexford">The 16:30 To Wexford</option>
 			<option value="The 17:15 To Wexford">The 17:15 To Wexford</option>
 			<option value="The 19:30 To Wexford">The 19:30 To Wexford</option>
@@ -44,20 +44,20 @@
     <%= f.label :days_of_notification %><br />
     <%= f.select(:days_of_notification, Alert::DAYS, {:include_blank => "Please select alert days"}) %>
   </div>
-
+	How many minutes before your bus arrives do you want to be alerted?
   <div class="field">
     <%= f.label :first_alert %><br />
-    <%= f.text_field :first_alert %>
+    <%= f.text_field :first_alert, :placeholder => "10" %>
   </div>
 
   <div class="field">
     <%= f.label :second_alert %><br />
-    <%= f.text_field :second_alert %>
+    <%= f.text_field :second_alert, :placeholder => "5"%>
   </div>
 
 	<div class="field">
     <%= f.label :third_alert %><br />
-    <%= f.text_field :third_alert %>
+    <%= f.text_field :third_alert, :placeholder => "3" %>
   </div>
 
   <div class="actions">

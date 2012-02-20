@@ -30,19 +30,19 @@
     <%= f.label :days_of_notification %><br />
     <%= f.select(:days_of_notification, Alert::DAYS, {:include_blank => "Please select alert days"}) %>
   </div>
-
+	<i>How many minutes before your bus arrives do you want to be alerted? </i>
   <div class="field">
     <%= f.label :first_alert %><br />
-    <%= f.text_field :first_alert %>
+    <%= f.text_field :first_alert, :placeholder => "10" %>
   </div>
   <div class="field">
     <%= f.label :second_alert %><br />
-    <%= f.text_field :second_alert %>
+    <%= f.text_field :second_alert, :placeholder => "5" %>
   </div>
 
 	<div class="field">
     <%= f.label :third_alert %><br />
-    <%= f.text_field :third_alert %>
+    <%= f.text_field :third_alert, :placeholder => "3" %>
   </div>
 
 	<div class="field">
