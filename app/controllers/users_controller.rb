@@ -59,7 +59,7 @@ class UsersController < ApplicationController
 	end
 
 			sign_in @user
-			flash[:success] = "Welcome to Tweet Me My Bus!"
+			flash[:success] = "Welcome to Tweet Me My Bus! Check your twitter inbox confirming your id"
 			redirect_to @user
 		else
 			@title = "Sign up"
