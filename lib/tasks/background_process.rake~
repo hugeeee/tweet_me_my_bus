@@ -21,9 +21,9 @@ end
 
 ####### TESTER for boot
 task :start => :environment do
-
+time = Time.now
 	begin
-		Twitter.direct_message_create("hugorobert17", "The application has booted")
+		Twitter.direct_message_create("hugorobert17", "The application has booted #{time}")
 	rescue Twitter::Error::Unauthorized => e
 		puts e
 		# what to do in the rescue of a failed message		
@@ -158,7 +158,7 @@ task :send_scheduled_alerts => :environment do
 	buses = intermediate_data[:scheduled_bus_route_bus_stops][:scheduled_bus_route_bus_stop]
 
 	# get the current time
-	@current_time = Time.now
+	@current_time = Time.now.in_time_zone('Dublin')
 
 	# get the time of the week.....is it a weekday or weekend
 	@time_of_the_week = day_of_week
