@@ -31,7 +31,7 @@ class User < ActiveRecord::Base
   # consistency of the password entered
   validates :password, :presence     => true,
   :confirmation => true,
-  :length       => { :within => 4..40 }
+  :length       => { :within => 6..40 }
 
 	# before the save encrypt the password
 	# the method to encrypt is below

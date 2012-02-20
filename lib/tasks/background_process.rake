@@ -21,9 +21,9 @@ end
 
 ####### TESTER for boot
 task :start => :environment do
-time = Time.now
+@time = Time.now.in_time_zone('Dublin')
 	begin
-		Twitter.direct_message_create("hugorobert17", "The application has booted #{time}")
+		Twitter.direct_message_create("hugorobert17", "The application has booted #{@time}")
 	rescue Twitter::Error::Unauthorized => e
 		puts e
 		# what to do in the rescue of a failed message		
@@ -198,7 +198,7 @@ task :send_scheduled_alerts => :environment do
 	@users_to_notify.each do |list|
 		list.each do |user|
 			begin
-				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} is scheduled to be at #{user.user_alert_stop} #{user.time}. (#{user.minute} minute alert.)")
+				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} is scheduled to be at #{user.user_alert_stop} #{user.time}. (#{user.minute} minute alert. @current_time)")
 			rescue Twitter::Error::Unauthorized => e
 				puts e
 			end
