@@ -3,6 +3,8 @@ require 'nori/parser/nokogiri'
 #require 'rubygems'
 require 'twitter'
 
+UTC = ' UTC'
+
 # method to determine period of the week
 def day_of_week
 	if @current_time.wday == 0 || @current_time.wday == 6
@@ -81,9 +83,8 @@ task :send_alert => :environment do
 	# loop thru the soap response and query the alerts due to be sent
 	buses.each do |bus|
 		# parse the time in from soap field
-		t = Time.parse  bus[:arrival_time]
-		time_of_arrival = t.gmtime
-
+		t = bus[:arrival_time] + UTC
+		time_of_arrival = Time.parse t
 		# subtract from the current time
 		dif = (time_of_arrival - @current_time)/ 60
 
@@ -166,10 +167,14 @@ task :send_scheduled_alerts => :environment do
 
 	@users_to_notify = []
 
-	# TODO: Loop thru the scheduled times for buses
+	#########	Loop thru buses and query for alerts
 	buses.each do |element|
-		t = Time.parse element[:time_scheduled]
-		@time_of_arrival = t.gmtime
+		# make sure the time is in GMT!
+	#	puts element[:time_scheduled]	TODO: Add UTC to string being parsed
+		t = element[:time_scheduled] + UTC
+		@time_of_arrival = Time.parse t
+#		@time_of_arrival = t.gmtime
+
 		@stop = element[:bus_stop_description]
 		bus_id = element[:scheduled_bus_route_id]
 		@bus = Alert::ROUTES[bus_id.to_i]
