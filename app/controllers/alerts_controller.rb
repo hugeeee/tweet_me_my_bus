@@ -20,6 +20,9 @@ before_filter :correct_user, :only => [:update, :edit, :destroy]
 			#@user = User.find(params[:user_id])
 			flash[:success] = "Alert created"
 			redirect_to current_user
+		else
+			@title = 'Create Alert'
+			render 'new'
 		end
 
 		# maybe do something else
