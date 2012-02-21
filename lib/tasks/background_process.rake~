@@ -168,7 +168,8 @@ task :send_scheduled_alerts => :environment do
 
 	# TODO: Loop thru the scheduled times for buses
 	buses.each do |element|
-		@time_of_arrival = Time.parse element[:time_scheduled]
+		t = Time.parse element[:time_scheduled]
+		@time_of_arrival = t.in_time_zone('Dublin')
 		@stop = element[:bus_stop_description]
 		bus_id = element[:scheduled_bus_route_id]
 		@bus = Alert::ROUTES[bus_id.to_i]

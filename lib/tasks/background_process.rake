@@ -200,7 +200,7 @@ task :send_scheduled_alerts => :environment do
 	@users_to_notify.each do |list|
 		list.each do |user|
 			begin
-				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} is scheduled to be at #{user.user_alert_stop} #{user.time}. (#{user.minute} minute alert. @current_time)")
+				Twitter.direct_message_create(user.twitter, "#{user.user_alert_bus} is scheduled to be at #{user.user_alert_stop} #{user.time}. (#{user.minute} minute alert. #{@current_time})")
 			rescue Twitter::Error::Unauthorized => e
 				puts e
 			end
