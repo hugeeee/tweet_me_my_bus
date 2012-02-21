@@ -21,7 +21,7 @@ end
 
 ####### TESTER for boot
 task :start => :environment do
-@time = Time.now.in_time_zone('Dublin')
+@time = Time.now.gmtime
 	begin
 		Twitter.direct_message_create("hugorobert17", "The application has booted #{@time}")
 	rescue Twitter::Error::Unauthorized => e
@@ -73,7 +73,7 @@ i = 0
 	@users_to_notify = []
 
 	# get the current time
-	@current_time = Time.now.in_time_zone('Dublin')
+	@current_time = Time.now.gmtime
 
 	# get the time of the week.....is it a weekday or weekend
 	@time_of_the_week = day_of_week
@@ -81,7 +81,8 @@ i = 0
 	# loop thru the soap response and query the alerts due to be sent
 	buses.each do |bus|
 		# parse the time in from soap field
-		time_of_arrival = Time.parse  bus[:arrival_time]
+		t = Time.parse  bus[:arrival_time]
+		time_of_arrival = t.in_time_zone('Dublin')
 
 		# subtract from the current time
 		dif = (time_of_arrival - @current_time)/ 60
@@ -158,7 +159,7 @@ task :send_scheduled_alerts => :environment do
 	buses = intermediate_data[:scheduled_bus_route_bus_stops][:scheduled_bus_route_bus_stop]
 
 	# get the current time
-	@current_time = Time.now.in_time_zone('Dublin')
+	@current_time = Time.now.gmtime
 
 	# get the time of the week.....is it a weekday or weekend
 	@time_of_the_week = day_of_week
@@ -167,7 +168,8 @@ task :send_scheduled_alerts => :environment do
 
 	# TODO: Loop thru the scheduled times for buses
 	buses.each do |element|
-		@time_of_arrival = Time.parse element[:time_scheduled]
+		t = Time.parse element[:time_scheduled]
+		@time_of_arrival = t.in_time_zone('Dublin')
 		@stop = element[:bus_stop_description]
 		bus_id = element[:scheduled_bus_route_id]
 		@bus = Alert::ROUTES[bus_id.to_i]
@@ -175,7 +177,7 @@ task :send_scheduled_alerts => :environment do
 		dif = (@time_of_arrival - @current_time)/60
 		@arriving_in = dif.round
 
-		puts "#{@bus}, #{@stop}, #{@time_of_the_week}, #{@arriving_in}"
+	#	puts "#{@bus}, #{@stop}, #{@time_of_the_week}, #{@arriving_in}"
 		users = User.alerts_to_be_sent(@bus, @stop, @time_of_the_week, @arriving_in)
 		
 		# adds bus and stop that the user needs to be alerted for
