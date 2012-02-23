@@ -29,7 +29,7 @@ class User < ActiveRecord::Base
 	# validates the presence of a user twitter
   validates :twitter, :presence => true, :uniqueness => {:case_sensitive => false}, :format => {:with => twitter_regex}
 
-	validate :twitter_user
+#	validate :twitter_user
 
   # consistency of the password entered
   validates :password, :presence     => true,

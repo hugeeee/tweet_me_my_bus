@@ -4,6 +4,4 @@ require File.expand_path('../application', __FILE__)
 # Initialize the rails application
 TweetMeMyBus::Application.initialize!
 
-config.time_zone = 'Dublin'
-
-#config.gem 'javan-whenever', :lib => false, :source => 'http://gems.github.com'
+config.gem 'javan-whenever', :lib => false, :source => 'http://gems.github.com'
