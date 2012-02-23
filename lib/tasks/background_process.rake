@@ -25,7 +25,7 @@ end
 task :start => :environment do
 @time = Time.now.gmtime
 	begin
-		Twitter.direct_message_create("hugorobert17", "The application has booted #{@time}")
+		Twitter.direct_message_create("hugeeee17", "Booted #{@time}")
 	rescue Twitter::Error::Unauthorized => e
 		puts e
 		# what to do in the rescue of a failed message		
@@ -182,7 +182,7 @@ task :send_scheduled_alerts => :environment do
 		dif = (@time_of_arrival - @current_time)/60
 		@arriving_in = dif.round
 
-	#	puts "#{@bus}, #{@stop}, #{@time_of_the_week}, #{@arriving_in}"
+		puts "#{@bus}, #{@stop}, #{@time_of_the_week}, #{@arriving_in} current|#{@current_time}| arriving |#{@time_of_arrival}|"
 		users = User.alerts_to_be_sent(@bus, @stop, @time_of_the_week, @arriving_in)
 		
 		# adds bus and stop that the user needs to be alerted for

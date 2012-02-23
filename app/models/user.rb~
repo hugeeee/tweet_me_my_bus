@@ -1,4 +1,5 @@
 require 'digest'
+require 'twitter'
 
 class User < ActiveRecord::Base
 
@@ -28,6 +29,8 @@ class User < ActiveRecord::Base
 	# validates the presence of a user twitter
   validates :twitter, :presence => true, :uniqueness => {:case_sensitive => false}, :format => {:with => twitter_regex}
 
+	validate :twitter_user
+
   # consistency of the password entered
   validates :password, :presence     => true,
   :confirmation => true,
@@ -56,9 +59,12 @@ class User < ActiveRecord::Base
 
 		# pay no attention to this
 		def twitter_user
-			twitter_client = TwitterClient.new
-				errors.add(:twitter, t("Twitter username does not exit")) unless twitter_client.user_search :twitter
-							
+
+			errors.add(:twitter, (" username does not exist")) unless begin 
+					Twitter.user :twitter
+				rescue Twitter::Error::NotFound => e
+					puts e
+			end		
 		end
 
 		# encrypts the password
