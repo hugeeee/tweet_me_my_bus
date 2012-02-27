@@ -29,7 +29,7 @@ class User < ActiveRecord::Base
 	# validates the presence of a user twitter
   validates :twitter, :presence => true, :uniqueness => {:case_sensitive => false}, :format => {:with => twitter_regex}
 
-#	validate :twitter_user
+	validate :twitter_user
 
   # consistency of the password entered
   validates :password, :presence     => true,
@@ -58,12 +58,12 @@ class User < ActiveRecord::Base
   private
 
 		# pay no attention to this
+		# this is not working
 		def twitter_user
 
-			errors.add(:twitter, (" username does not exist")) unless begin Twitter.user :twitter
-				rescue Twitter::Error::NotFound => e
-					puts e
-			end		
+			begin; Twitter.user twitter; rescue Twitter::Error::NotFound; errors.add_to_base("username does not exist"); end
+
+			puts :twitter
 		end
 
 		# encrypts the password

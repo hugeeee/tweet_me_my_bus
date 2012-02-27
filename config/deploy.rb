@@ -4,7 +4,7 @@ set :application, "tweetmemybus.com"#"set your application name here"
 set :repository,  "https://github.com/hugeeee/tweet_me_my_bus" # https://github.com/hugeeee/tweet_me_my_bus
 
 set :scm, :git
-set :scm_passphrase, "hotmail17"
+set :scm_passphrase, "*****"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 #default_run_options[:pty] = true
 set :user, "hkinghall"

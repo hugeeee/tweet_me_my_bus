@@ -58,12 +58,12 @@ class User < ActiveRecord::Base
   private
 
 		# pay no attention to this
+		# this is not working
 		def twitter_user
 
-			errors.add(:twitter, (" username does not exist")) unless begin Twitter.user :twitter
-				rescue Twitter::Error::NotFound => e
-					puts e
-			end		
+			begin; Twitter.user :twitter; rescue Twitter::Error::NotFound; errors.add_to_base("username does not exist"); end
+
+			puts :twitter
 		end
 
 		# encrypts the password

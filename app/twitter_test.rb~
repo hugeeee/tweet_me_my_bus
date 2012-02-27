@@ -12,13 +12,14 @@ end
 #user = User.first
 #exception = 'The user is not following the app'
 begin
-	@user = Twitter.user("hugobadabbabsba")
+	@user = Twitter.user("hugeeee17")
 	@id = @user["id"]
 rescue Twitter::Error::NotFound => e
 	@user = nil
 	@id = "not there?"
 end
 
+puts @user.nil?
 puts @id
 
 #begin
