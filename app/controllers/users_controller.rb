@@ -39,19 +39,9 @@ class UsersController < ApplicationController
 	# and also signs the user in.
 	def create
 		@user = User.new(params[:user])
-	
-		#@twitter_client = TwitterClient.new
-		#twitter = @user.twitter
 		
 		if @user.save
-=begin
-			begin
-				Twitter.direct_message_create(@user.twitter, "Welcome to tweet me my bus")
-			rescue Twitter::Error::Unauthorized => e
-				puts e
-			# what to do in the rescue of a failed message		
-			end
-=end
+
 			sign_in @user
 			flash[:success] = "Welcome to Tweet Me My Bus!"
 			redirect_to @user

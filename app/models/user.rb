@@ -63,7 +63,6 @@ class User < ActiveRecord::Base
 
 			begin; Twitter.user twitter; rescue Twitter::Error::NotFound; errors.add_to_base("username does not exist"); end
 
-			puts :twitter
 		end
 
 		# encrypts the password
