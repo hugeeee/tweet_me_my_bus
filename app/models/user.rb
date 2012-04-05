@@ -57,8 +57,6 @@ class User < ActiveRecord::Base
 
   private
 
-		# pay no attention to this
-		# this is not working
 		def twitter_user
 
 			begin; Twitter.user twitter; rescue Twitter::Error::NotFound; errors.add_to_base("username does not exist"); end
